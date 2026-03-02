@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Pianino | Okiem lektora</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header-container"></div>
+
+<!-- NAWIGACJA -->
+<nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="menu-container"></div>
+</nav>
+
+<main class="container">
+    <div class="content">
+        <article class="post">
+      <h1>Mateusz Iwańczak</h1>
+        <h2 id="kim">Kim jestem</h2>
+        <p>Od 10 marca 2025 do dziś jestem lektorem nieustanowionym w parafii p.w. św. Stanisława Biskupa i Męczennika w Starym Cykarzewie.</p>
+        <p>Służę Bogu również gościnnie w innych parafiach, gdzie nawiązałem nowe relacje.</p>
+      <h2 id="funkcja">Jaką pełnię funkcję?</h2>
+        <p>Byłem na posłudze lektorskiej i czasem byłem też psałterzystą* w następujących świątyniach:</p>
+      <h2 id="gdzie">Gdzie byłem na służbie?</h2>
+        <ol id="światynie">
+      <li>Parafia pw. Św. Stanisława Biskupa i Męczennika w Starym Cykarzewie <strong>(dom)*</strong></li>
+      <li><a href="https://www.parafia-mstow.pl/" target="_blank" rel="noopener noreferrer">
+        Parafia pw. Wniebowzięcia NMP w Mstowie</a> (gościnnie)</li>
+      <li><a href="https://www.facebook.com/p/Parafia-%C5%9Awi%C4%99tych-Aposto%C5%82%C3%B3w-Piotra-i-Paw%C5%82a-w-Rybnej-100064661563017/?locale=pl_PL" target="_blank" 
+        rel="noopener noreferrer">
+        Parafia pw. Św. Apostołów Piotra i Pawła w Rybnej</a> (gościnnie)*</li>
+      <li><a href="http://parafiamykanow.czest.pl/" target="_blank" rel="noopener noreferrer">
+        Parafia pw. Św. Leonarda Opata w Mykanowie</a> (gościnnie)*</li>
+      <li><a href="http://parafialubojna.pl/" target="_blank" rel="noopener noreferrer">
+        Parafia pw. Najświętszego Serca Pana Jezusa w Lubojnie</a> (gościnnie)*</li>
+      <li><span title="Kościół filialny Parafii pw. Najświętszego Serca Pana Jezusa w Lubojnie">
+        Kościół filialny pw. św. Faustyny w Lubojence</span> (gościnnie)*</li>
+      <li><a href="https://parafiarudniki.pl/" target="_blank" rel="noopener noreferrer">
+          Parafia p.w. Miłosierdzia Bożego w Rudnikach</a> (gościnnie)*</li>
+      <li><a href="https://www.emaus.czest.pl/" target="_blank" rel="noopener noreferrer">
+          Parafia Akademicka Świętego Ireneusza w Częstochowie</a> (gościnnie)</li>
+      <li><a href="https://parafiaborowno.pl/" target="_blank" rel="noopener noreferrer">
+          Parafia pw. św. Wawrzyńca DkM w Borownie</a> (gościnnie)*</li>
+      <li><a href="https://www.facebook.com/p/Parafia-%C5%9Bw-Macieja-Ap-w-Kruszynie-100070111850189/?locale=pl_PL" 
+        target="_blank" rel="noopener noreferrer">Parafia pw. św. Macieja Apostoła w Kruszynie</a> (gościnnie)</li>
+      <li><span title="Kościół filialny Parafii pw. Św. Stanisława Biskupa i Męczennika w Starym Cykarzewie">
+        Kościół filialny p.w. św. Jana Chrzciciela w Starym Kocinie <strong></span>(dom)</strong></li>
+      <li><a href="https://przemienienie.info/" target="_blank" rel="noopener noreferrer">
+          Parafia p.w. Przemienienia Pańskiego w Libiążu</a> (gościnnie)</li>
+      <li>Parafia pw. Najświętszej Maryi Panny Różańcowej w Kościelcu (gościnnie)*</li>
+      <li><a href="https://parafia.wierzchowisko.pl/" target="_blank" rel="noopener noreferrer">
+          Parafia p.w. Jezusa Chrystusa Dobrego Pasterza w Wierzchowisku</a> (gościnnie)</li>
+      <li><a href="https://rzasnia.czest.pl/" target="_blank" rel="noopener noreferrer">
+          Parafia pw. św. Rocha w Rząśni (gościnnie)</li>
+      <li><a href="https://www.facebook.com/p/Parafia-Stygmat%C3%B3w-%C5%9Aw-Franciszka-z-Asy%C5%BCu-w-Ostrowach-100064675752028/?locale=pl_PL" target="_blank" rel="noopener noreferrer">
+          Parafia p.w. Stygmatów Świętego Franciszka z Asyżu w Ostrowach nad Okszą</a> (gościnnie)</li>
+    </ol>
+        </article>
+    </div>
+
+    <aside class="sidebar">
+        <div id="nawigacja-container"></div>
+        <h3>Kategorie</h3>
+        <ul>
+            <li><a href="#">Refleksje</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Technologia</a></li>
+        </ul>
+    </aside>
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script>
+function loadComponent(id, file) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+}
+
+loadComponent("header-container", "header.html");
+loadComponent("menu-container", "menu.html");
+loadComponent("nawigacja-container", "nawigacja.html");
+loadComponent("footer-container", "footer.html");
+</script>
+
+<script src="clock.js"></script>
+
+</body>
+</html>
