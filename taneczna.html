@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Matiwa Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header-container"></div>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header-container").innerHTML = data;
+  });
+</script>
+
+<nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="menu-container"></div>
+</nav>
+
+<main class="container">
+    <div class="content">
+        <h1 id="activ">Activ</h1>
+            <h2>Activ - Doar cu tine (Official Music Video) 🎶💃🔥🎧🎵⚡🇷🇴 2000s</h2>
+            <p class="date">2 marca 2026</p>
+            <p><div style="text-align: center;">
+                <audio controls>
+                  <source src="audio/Activ-Doarcutine.mp3" type="audio/mpeg">
+                  Twoja przeglądarka nie obsługuje odtwarzacza audio.
+                </audio>
+              </div>
+              Źródło: <a href="https://youtu.be/xUQRZzmx-HE?si=AbDiorxf5QcOD_qH">https://youtu.be/xUQRZzmx-HE?si=AbDiorxf5QcOD_qH</a></p>
+        </article>
+        
+            <h2 id="djprojectgiulia">DJ Project feat. Giulia - Nu | Official Video 🎶💃🔥🎧🎵⚡🇷🇴 2000s</h2>
+            <p class="date">2 marca 2026</p>
+            <p><div style="text-align: center;">
+                <audio controls>
+                  <source src="audio/DJProjectGiulia-Nu.mp3" type="audio/mpeg">
+                  Twoja przeglądarka nie obsługuje odtwarzacza audio.
+                </audio>
+              </div>
+              Źródło: <a href="https://youtu.be/v3OKhnYPTVI?si=WhAAL1KtbQCB-zNf">https://youtu.be/v3OKhnYPTVI?si=WhAAL1KtbQCB-zNf</a></p>
+        </article>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Kategorie</h3>
+        <ul>
+            <li><a href="#activ">Activ</a></li>
+            <li><a href="#djprojectgiulia">DJ Project feat. Giulia</a></li>
+        </ul>
+
+        <h3>Archiwum</h3>
+        <ul>
+            <li><a href="#">Luty 2026</a></li>
+            <li><a href="#">Styczeń 2026</a></li>
+        </ul>
+    </aside>
+</main>
+
+
+
+<script>
+fetch("menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-container").innerHTML = data;
+
+    document.querySelectorAll(".has-submenu").forEach(item => {
+      item.addEventListener("click", function(e) {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const submenu = this.nextElementSibling;
+          if (submenu) submenu.classList.toggle("active");
+        }
+      });
+    });
+  });
+
+function toggleMenu() {
+  const menu = document.getElementById("mainMenu");
+  if (menu) menu.classList.toggle("active");
+}
+</script>
+
+<div id="footer-container"></div>
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer-container").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>
