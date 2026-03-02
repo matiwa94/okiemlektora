@@ -193,3 +193,38 @@ footer a:hover {
         display: block;
     }
 }
+
+/* --- PASEK PRZEWIJANY --- */
+.marquee {
+  background-color: #c0392b;  /* czerwony pasek */
+  color: #000000;             /* czarny tekst */
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;          /* start po prawej stronie */
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Zatrzymanie animacji po najechaniu myszką */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
