@@ -280,3 +280,51 @@ footer a:hover {
         overflow: visible;
     }
 }
+
+/* Kontener galerii zamiast .post */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px; /* odstępy między obrazkami */
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;       /* wysokość miniaturki */
+    object-fit: cover;   /* wypełnia kontener i przycina nadmiar */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 250px; /* wysokość kontenera miniaturki */
+}
+
+/* Lightbox overlay */
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
