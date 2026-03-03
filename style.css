@@ -228,3 +228,55 @@ footer a:hover {
 .marquee:hover .marquee-content {
   animation-play-state: paused;
 }
+
+/* obrazki */
+.post img {
+    max-width: 90%;   /* obrazek nigdy nie będzie większy niż 90% kontenera wpisu */
+    width: auto;      /* zachowa proporcje */
+    height: auto;     /* zachowa proporcje */
+    display: block;   /* usuwa dziure pod obrazkami */
+    margin: 20px auto; /* 20px marginesu pionowo i automatyczne wyśrodkowanie */
+}
+
+@media (max-width: 480px) {
+    .post img {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+}
+
+/* --- STICKY SIDEBAR Z WŁASNYM SUWAKIEM --- */
+
+.sidebar {
+    position: sticky;
+    top: 20px;              /* odstęp od góry podczas scrollowania */
+    max-height: 80vh;       /* maks. 80% wysokości ekranu */
+    overflow-y: auto;       /* własny pionowy suwak */
+}
+
+/* Estetyczny suwak (Chrome, Edge, Opera) */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #d7eadf;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #4a7a63;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #3e6b5a;
+}
+
+/* Wyłączenie sticky na telefonach */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+}
