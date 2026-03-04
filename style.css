@@ -1,3 +1,11 @@
+p {
+    margin: 10px 0; /* 10px odstępu nad i pod paragrafem */
+}
+
+li {
+    margin: 5px 0;  /* 5px odstępu nad i pod każdym elementem listy */
+}
+
 /* --- OGÓLNE --- */
 body {
     font-family: 'Georgia', serif;
