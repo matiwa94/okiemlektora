@@ -338,3 +338,40 @@ footer a:hover {
   max-height: 90%;
   border-radius: 10px;
 }
+
+
+
+
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* LINK DO SOCIAL */
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.social-link img {
+    width: 28px;
+    height: 28px;
+}
+
+/* efekt po najechaniu */
+
+.social-link:hover {
+    color: #ff0000;
+    transform: scale(1.05);
+}
