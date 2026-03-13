@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Playlista RJG 100,6 MHz | Okiem lektora</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header-container"></div>
+
+<!-- NAWIGACJA -->
+<nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="menu-container"></div>
+</nav>
+
+<main class="container">
+    <div class="content">
+      <h1>Playlista Radia Jasna Góra 100,6 MHz</h1>
+        <article class="post">
+          <h1 id="adh">Agnieszka Drewnicka ft. Heres</h1>
+          
+            <h2>
+              <a href="https://youtu.be/Kl2yryNwews?si=eG7rlV5MnR852FwC" target="_blank" rel="noopener noreferrer">
+                Agnieszka Drewnicka ft. Heres - Wiem że jesteś (Official Music Video)
+              </a>
+            </h2>
+            
+        </article>
+
+        <article class="post">
+          <h1 id="e15">exodus 15</h1>
+          
+            <h2>
+              <a href="https://youtu.be/lCdHW_B6SKM?si=-4uxJ2g6EMKEYYRa" target="_blank" rel="noopener noreferrer">
+                Nasz Bóg - exodus 15
+              </a>
+            </h2>
+            
+        </article>
+        
+        <article class="post">
+          <h1 id="jsjd">Jednego Serca Jednego Ducha</h1>
+          <h2>
+            <a href="https://youtu.be/wat9EQyN-2k?si=DkHYUb27KVDTv2BK" target="_blank" rel="noopener noreferrer">
+              Przychodzisz Panie - Jednego Serca Jednego Ducha 2011
+            </a>
+          </h2>
+        </article>
+        
+        <article class="post">
+          <h1 id="kd">Kate Dąbrowska</h1>
+          <h2>
+            <a href="https://youtu.be/tOz_Y5xQkjc?si=0HECzHMAqngaqqv8" target="_blank" rel="noopener noreferrer">
+              KATE - BEZPOWROTNIE
+            </a>
+          </h2>
+          <h2>
+            <a href="https://youtu.be/Jq-2RoAN0Pk?si=bGAztdQ6bb3KW8Mj" target="_blank" rel="noopener noreferrer">
+              Kate - Dalej, Dalej
+            </a>
+          </h2>
+          <h2>
+            <a href="https://youtu.be/A8nAi5mt-wg?si=s9xWCpSHuT1R12Vi" target="_blank" rel="noopener noreferrer">
+              Kate - Teraz siebie znam
+            </a>
+          </h2>
+          <h2>
+            <a href="https://youtu.be/Is0tB5vW7wk?si=0ngyDxXQAv6pBoT0" target="_blank" rel="noopener noreferrer">
+              KATE - Z Tobą tak
+            </a>
+          </h2>
+          <h2>
+            <a href="https://youtu.be/VJiqVia5Tng?si=43gES2G90Rlpripi" target="_blank" rel="noopener noreferrer">
+              KATE - Zachłysnę się
+            </a>
+          </h2>
+        </article>
+
+        <article class="post">
+          <h1 id="mwd">Mocni w Duchu</h1>
+            <h2>
+              <a href="https://youtu.be/xyVjzoxMbKE?si=rP_vzFpLGR6WfJ-N" target="_blank" rel="noopener noreferrer">
+                Ty obecny wśród nas - Mocni w Duchu (official video)
+              </a>
+            </h2>
+            
+        </article>
+
+        <article class="post">
+          <h1 id="nz">Natalia Zastępa</h1>
+            <h2>
+              <a href="https://youtu.be/QFU8ogXqmWw?si=vq2UgJPSjgK8M9ry" target="_blank" rel="noopener noreferrer">
+                Natalia Zastępa - Wracam do siebie
+              </a>
+            </h2>
+            
+        </article>
+
+        <article class="post">
+          <h1 id="sdm2016">ŚDM Kraków 2016</h1>
+            <h2>
+              <a href="https://youtu.be/joBSdPV3oMo?si=8rZ0BnmSETbZ4tOj" target="_blank" rel="noopener noreferrer">
+                "Błogosławieni miłosierni" oficjalny Teledysk ŚDM Kraków 2016 [Official Music Video]
+              </a>
+            </h2>
+            
+        </article>
+
+    </div>
+
+    <aside class="sidebar">
+      <div id="nawigacja-container"></div>
+        <h3>Wykonawcy</h3>
+        <ul>
+            <li><a href="#adh">Agnieszka Drewnicka ft. Heres</a></li>
+            <li><a href="#e15">exodus 15</a></li>
+            <li><a href="#jsjd">Jednego Serca Jednego Ducha</a></li>
+            <li><a href="#kd">Kate Dąbrowska</a></li>
+            <li><a href="#mwd">Mocni w Duchu</a></li>
+            <li><a href="#nz">Natalia Zastępa</a></li>
+            <li><a href="#sdm2016">ŚDM Kraków 2016</a></li>
+        </ul>
+    </aside>
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script>
+function loadComponent(id, file) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+}
+
+loadComponent("header-container", "header.html");
+loadComponent("menu-container", "menu.html");
+loadComponent("nawigacja-container", "nawigacja.html");
+loadComponent("footer-container", "footer.html");
+</script>
+
+<script src="clock.js"></script>
+
+</body>
+</html>
