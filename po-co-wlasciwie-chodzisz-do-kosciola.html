@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Refleksje | Okiem lektora</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header-container"></div>
+
+<!-- NAWIGACJA -->
+<nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="menu-container"></div>
+</nav>
+
+<main class="container">
+    <div class="content">
+        
+        <article class="post">
+            <h2>Po co właściwie chodzisz do Kościoła?</h2>
+            <p class="date">16 marca 2026</p>
+
+            <p><strong>Chodzisz do Kościoła, bo chcesz… czy dlatego, że „tak trzeba”?</strong><br>
+            A może wystarcza Ci niedziela i nie widzisz sensu w czymś więcej?</p>
+
+            <p>W Kościele, który przecież tworzą ludzie niedoskonali, łatwo zauważyć jedną rzecz:
+            każdy przeżywa wiarę inaczej.</p>
+
+            <p>I samo to nie jest problemem.</p>
+
+            <p>Problem zaczyna się wtedy, gdy zaczynamy się nawzajem oceniać.</p>
+
+            <p>Pewien chłopak opowiadał o znajomości z internetu. Rozmawiali o wierze, było dobrze.
+            Druga osoba publikowała treści religijne, jeździła do sanktuarium, dzieliła się tym, co przeżywa.</p>
+
+            <p>Do momentu, kiedy padło jedno zdanie:
+            <br><i>„Chodzę codziennie na Mszę”.</i></p>
+
+            <p>Od tego momentu coś się zmieniło.</p>
+
+            <p>Pojawiły się słowa:
+            <br><i>„Po co chodzisz codziennie? Ja chodzę w niedzielę i mi wystarczy”.</i></p>
+
+            <p>Rozmowa zaczęła gasnąć. Później pojawiła się niechęć, a nawet agresja.</p>
+
+            <p>Znajomość się zakończyła.</p>
+
+            <h4>Wnioski końcowe</h4>
+
+            <p><strong>Co tak naprawdę się tu wydarzyło?</strong></p>
+
+            <p>Czy chodziło o wiarę?</p>
+
+            <p>A może o coś głębszego:</p>
+
+            <ul>
+                <li>porównywanie się,</li>
+                <li>poczucie bycia ocenianym,</li>
+                <li>wewnętrzny dyskomfort?</li>
+            </ul>
+
+            <p>Czasem, gdy widzimy u kogoś coś więcej, niż sami robimy… pojawia się napięcie.</p>
+
+            <p>Nie dlatego, że to jest złe.</p>
+
+            <p>Ale dlatego, że coś w nas zostaje poruszone.</p>
+
+            <p><strong>I wtedy pojawia się ważne pytanie:</strong></p>
+
+            <p>Czy potrafimy to przyjąć spokojnie…<br>
+            czy raczej zaczynamy umniejszać drugiej osobie?</p>
+
+            <p>Bo łatwiej powiedzieć:
+            <br>„to przesada”<br>
+            niż zapytać siebie:
+            <br>„dlaczego mnie to rusza?”</p>
+
+            <p>Wiara nie jest wyścigiem.</p>
+
+            <p>To nie jest konkurs:
+            kto więcej,
+            kto częściej,
+            kto lepiej.</p>
+
+            <p><strong>To jest relacja.</strong></p>
+
+            <p>A relacji nie da się porównywać.</p>
+
+            <p>Każdy jest w innym miejscu.</p>
+
+            <p>Każdy ma inną drogę.</p>
+
+            <p>I każdy odpowiada za swoją.</p>
+
+            <p><strong>Więc po co chodzisz do Kościoła?</strong></p>
+
+            <p>Z przyzwyczajenia?<br>
+            Z obowiązku?<br>
+            Czy dlatego, że naprawdę chcesz spotkania?</p>
+
+            <p>Bo można być co niedzielę… i być daleko.</p>
+
+            <p>A można przyjść rzadziej… ale naprawdę.</p>
+
+            <p><strong>I może właśnie od tego pytania warto zacząć.</strong></p>
+        </article>
+    </div>
+
+    <aside class="sidebar">
+        <div id="nawigacja-container"></div>
+    </aside>
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script>
+function loadComponent(id, file) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+}
+
+loadComponent("header-container", "header.html");
+loadComponent("menu-container", "menu.html");
+loadComponent("nawigacja-container", "nawigacja-articles.html");
+loadComponent("footer-container", "footer.html");
+</script>
+
+<script src="clock.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Czy Eucharystia naprawdę uzdrawia? | Okiem lektora</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header-container"></div>
+
+<!-- NAWIGACJA -->
+<nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="menu-container"></div>
+</nav>
+
+<main class="container">
+    <div class="content">
+
+        <article class="post">
+            <h2>Czy Eucharystia naprawdę uzdrawia?</h2>
+            <p class="date">16 marca 2026</p>
+
+            <p><strong>Czy po Mszy czujesz coś więcej… czy często wychodzisz taki sam jak wszedłeś?</strong><br>
+            Pusty, zmęczony, rozproszony?</p>
+
+            <p>Eucharystia to coś, co wielu z nas przyjmuje od lat. To centrum Mszy Świętej — moment spotkania.</p>
+
+            <p>Tylko pytanie brzmi:</p>
+
+            <p><strong>Czy my wiemy, w czym naprawdę uczestniczymy?</strong></p>
+
+            <p>Wyobraź sobie, że ktoś do Ciebie przychodzi.<br>
+            Nie jesteś mu obojętny. Chce z Tobą być. Zatrzymuje się dla Ciebie.</p>
+
+            <p>Co wtedy czujesz?</p>
+
+            <p>Bo właśnie taką rzeczywistością jest Msza Święta.</p>
+
+            <p>To nie jest tylko „obowiązek”.<br>
+            To nie jest „godzina do zaliczenia”.</p>
+
+            <p><strong>To spotkanie.</strong></p>
+
+            <p>Jezus nie przychodzi symbolicznie.</p>
+
+            <p>Przychodzi realnie — w Eucharystii.<br>
+            I mówi:
+            <br><i>„Jesteś dla mnie ważny”.</i></p>
+
+            <p>Nie patrzy na to:
+            <ul>
+                <li>czy jesteś idealny,</li>
+                <li>czy znowu popełniłeś ten sam błąd,</li>
+                <li>czy masz „wszystko poukładane”.</li>
+            </ul>
+            </p>
+
+            <p>Przychodzi do Twojej codzienności — takiej, jaka jest.</p>
+
+            <p><strong>A my?</strong></p>
+
+            <p>Czasem jesteśmy ciałem… ale nie sercem.</p>
+
+            <p>Myśli uciekają.<br>
+            Skupienie znika.<br>
+            Wychodzimy i mówimy:
+            <br>„nic nie poczułem”.</p>
+
+            <p>Tylko czy naprawdę byliśmy obecni?</p>
+
+            <h4>Wnioski końcowe</h4>
+
+            <p><strong>Czy Eucharystia uzdrawia?</strong></p>
+
+            <p>Tak — ale nie w taki sposób, jak czasem byśmy chcieli.</p>
+
+            <p>To nie jest „szybka naprawa”:
+            <ul>
+                <li>nie usunie od razu problemów,</li>
+                <li>nie zmieni życia w jeden dzień,</li>
+                <li>nie sprawi, że wszystko nagle będzie łatwe.</li>
+            </ul>
+            </p>
+
+            <p>To działa głębiej.</p>
+
+            <p><strong>Jak paliwo.</strong></p>
+
+            <p>Kiedy samochód nie ma paliwa — zatrzymuje się.</p>
+
+            <p>Podobnie jest z człowiekiem.</p>
+
+            <p>Bez sensu, bez relacji, bez zatrzymania — zaczynamy gasnąć.</p>
+
+            <p>Eucharystia nie „robi wszystkiego za nas”.</p>
+
+            <p>Ale daje:
+            <ul>
+                <li>siłę,</li>
+                <li>pokój,</li>
+                <li>kierunek.</li>
+            </ul>
+            </p>
+
+            <p>Tylko jest jeden warunek:</p>
+
+            <p><strong>musisz chcieć spotkania.</strong></p>
+
+            <p>Bo relacja nie działa jednostronnie.</p>
+
+            <p>Tak jak w rozmowie — nie wystarczy być obok.<br>
+            Trzeba słuchać. Być obecnym.</p>
+
+            <p>Msza Święta ma swój rytm:</p>
+
+            <ul>
+                <li>na początku — zatrzymujesz się,</li>
+                <li>w Słowie — dostajesz kierunek,</li>
+                <li>w Eucharystii — spotykasz się najgłębiej.</li>
+            </ul>
+
+            <p>I na końcu wychodzisz…</p>
+
+            <p>Nie po to, żeby wrócić do starego schematu.<br>
+            Tylko żeby żyć inaczej.</p>
+
+            <p><strong>Więc pytanie nie brzmi tylko:</strong></p>
+
+            <p>„Czy Eucharystia uzdrawia?”</p>
+
+            <p>Ale:</p>
+
+            <p><strong>Czy ja naprawdę pozwalam się spotkać?</strong></p>
+        </article>
+    </div>
+
+    <aside class="sidebar">
+        <div id="nawigacja-container"></div>
+    </aside>
+</main>
+
+<!-- FOOTER -->
+<div id="footer-container"></div>
+
+<script>
+function loadComponent(id, file) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+}
+
+loadComponent("header-container", "header.html");
+loadComponent("menu-container", "menu.html");
+loadComponent("nawigacja-container", "nawigacja-articles.html");
+loadComponent("footer-container", "footer.html");
+</script>
+
+<script src="clock.js"></script>
+
+</body>
+</html>
