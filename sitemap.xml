@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- STRONA GŁÓWNA -->
+  <url>
+    <loc>https://matiwa94.github.io/okiemlektora/</loc>
+  </url>
+
+  <!-- KATEGORIE / PODSTRONY -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/discopolo.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/taneczna.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/pianino.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/rjg.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/rysunki.html</loc></url>
+
+  <!-- REFLEKSJE (lista) -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/refleksje.html</loc></url>
+
+  <!-- ARTYKUŁY (NAJWAŻNIEJSZE SEO 🔥) -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/czy-ja-bogu-wystarcze.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/jestem-niedoskonaly-po-co-mam-sluzyc.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/panie-nie-jestem-godzien-podobaja-mi-sie-kobiety.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/czy-eucharystia-naprawde-uzdrawia.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/po-co-wlasciwie-chodzisz-do-kosciola.html</loc></url>
+
+  <!-- O MNIE -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/kimjestem.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/kontakt.html</loc></url>
+
+</urlset>
