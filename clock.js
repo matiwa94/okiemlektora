@@ -1,22 +1,21 @@
 function updateClock() {
+    const clockContainer = document.getElementById('clock-container');
+    if (!clockContainer) return;
+
     const now = new Date();
+    
+    // Dzień tygodnia i data
+    const day = now.toLocaleDateString('pl-PL', { weekday: 'long' });
+    const date = now.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' });
+    const time = now.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit' });
 
-    const options = { 
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
-    };
-    
-    const date = now.toLocaleDateString('pl-PL', options);
-    const time = now.toLocaleTimeString('pl-PL');
-    
-    const clock = document.getElementById('clock-container');
-    if(clock) {
-        clock.innerHTML = date + "<br>" + time;
-    }
+    clockContainer.innerHTML = `
+        <div class="modern-widget">
+            <div class="widget-day">${day}</div>
+            <div class="widget-date">${date}</div>
+            <div class="widget-time">${time}</div>
+        </div>
+    `;
 }
-
-// Aktualizuj co sekundę
 setInterval(updateClock, 1000);
 updateClock();
