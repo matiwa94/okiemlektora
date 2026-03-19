@@ -156,6 +156,15 @@
         loadComponent("footer-container", "footer.html");
     </script>
 
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
     <script src="clock.js"></script>
 
 </body>
