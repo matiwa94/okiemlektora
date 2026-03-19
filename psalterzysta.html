@@ -1,126 +1,128 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Posługa psałterzysty - Bóg i sens</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+  <meta charset="UTF-8">
+  <title>Posługa psałterzysty | Okiem lektora</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" sizes="64x64" href="images/okiemlektora.ico">
 </head>
+
 <body>
 
-    <!-- Header z HTML -->
-    <div id="header-container"></div>
+  <!-- HEADER -->
+  <div id="header-container"></div>
 
-    <!-- Nawigacja/menu -->
-    <nav>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <div id="menu-container"></div>
-    </nav>
+  <!-- NAWIGACJA -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div id="menu-container"></div>
+  </nav>
 
-    <!-- Zegar (JS) -->
-    <div id="clock-container"></div>
+  <main class="container">
+    <div class="content">
+      <article class="post">
+        <h1>Posługa psałterzysty</h1>
+        <h2 id="intro">„Moc w słabości się doskonali” (2 Kor 12,9) ❤️‍🔥🔥🕊️</h2>
+        <p>Droga psałterzysty jest pięknym sposobem, aby uczestniczyć w liturgii, śpiewać psalmy i wprowadzać wspólnotę
+          w modlitwę. Oto 9 kroków, które możesz ćwiczyć samodzielnie w domu.</p>
 
-    <!-- Główna zawartość -->
-    <section>
-        <main class="container">
-            <!-- Sidebar / spis treści -->
-            <aside class="sidebar" id="toc">
-                <h3>Spis treści</h3>
-                <ul>
-                    <li><a href="#intro">Wprowadzenie</a></li>
-                    <li><a href="#steps">9 kroków samodzielnej drogi psałterzysty</a></li>
-                    <li><a href="#youtube">Materiały online</a></li>
-                </ul>
-            </aside>
+        <h2 id="steps">9 kroków samodzielnej drogi psałterzysty 🎶🕊️</h2>
+        <ol class="psalterzysta-steps">
+          <li>
+            <strong>🎤 Poznaj swój głos</strong>
+            <p>Nagraj siebie mówiąc i śpiewając. Zauważ, czy Twój głos jest wyższy (sopran/alt) czy niższy (tenor/bas).
+              To pomoże Ci dobrać tonacje psalmów.</p>
+          </li>
+          <li>
+            <strong>🎵 Nauka podstaw śpiewu</strong>
+            <p>Ćwicz gamy i interwały. Użyj tutoriali na YouTube: <a
+                href="https://www.youtube.com/results?search_query=ćwiczenia+wokalne+początkujący"
+                target="_blank">Ćwiczenia wokalne dla początkujących</a>.</p>
+          </li>
+          <li>
+            <strong>🕊️ Czytanie i śpiew psalmów</strong>
+            <p>Wybierz prosty psalm, np. <em>Psalm 23</em>, czytaj go głośno, potem spróbuj zaśpiewać prostą melodię.
+              Nagrywaj siebie, aby sprawdzać postępy.</p>
+          </li>
+          <li>
+            <strong>📱 Używaj nagrań i YouTube</strong>
+            <p>Znajdź nagrania psałterzystów lub chóru, np. <a
+                href="https://www.youtube.com/results?search_query=psalm+responsoryjny" target="_blank">Psalm
+                responsoryjny</a>, i śpiewaj razem z nagraniem, aby poczuć rytm i tonację.</p>
+          </li>
+          <li>
+            <strong>🧘 Ćwiczenia oddechowe</strong>
+            <p>Oddychaj przeponą: wdech przez nos, spokojny wydech przez usta, śpiewając długie dźwięki. To poprawi Twój
+              oddech i wytrzymałość wokalną.</p>
+          </li>
+          <li>
+            <strong>🎶 Praca nad intonacją</strong>
+            <p>Używaj aplikacji do sprawdzania tonacji np. <a
+                href="https://play.google.com/store/apps/details?id=com.ninjamobile.pitchlab"
+                target="_blank">PitchLab</a> lub pianina online, aby ćwiczyć trafianie w dokładny ton.</p>
+          </li>
+          <li>
+            <strong>📝 Notuj postępy</strong>
+            <p>Zapisuj ćwiczone psalmy, tonacje i czas praktyki. Możesz też nagrywać krótkie wideo, aby zobaczyć swój
+              rozwój po kilku tygodniach.</p>
+          </li>
+          <li>
+            <strong>💻 Nauka prostych melodii</strong>
+            <p>Zacznij od krótkich fragmentów psalmów. YouTube ma playlisty: <a
+                href="https://www.youtube.com/results?search_query=psalmy+do+nauki+samodzielnie" target="_blank">psalmy
+                do nauki samodzielnej</a>.</p>
+          </li>
+          <li>
+            <strong>💖 Codzienna praktyka i modlitwa</strong>
+            <p>Ćwicz codziennie 10–15 minut. Połącz to z modlitwą, aby zwiększyć skupienie i radość z praktyki.</p>
+          </li>
+        </ol>
 
-            <!-- Główna treść -->
-            <div class="content">
-                <h1>Posługa psałterzysty</h1>
-                <h2 id="intro">„Moc w słabości się doskonali” (2 Kor 12,9) ❤️‍🔥🔥🕊️</h2>
-                <p>Droga psałterzysty jest pięknym sposobem, aby uczestniczyć w liturgii, śpiewać psalmy i wprowadzać wspólnotę w modlitwę. Oto 9 kroków, które możesz ćwiczyć samodzielnie w domu.</p>
+        <h2 id="youtube">Materiały online</h2>
+        <p>Warto korzystać z YouTube, nagrań chóralnych i tutoriali wokalnych, aby rozwijać swoje umiejętności
+          samodzielnie. W przyszłości możesz też spróbować dołączyć do chóru lub wspólnoty liturgicznej.</p>
+      </article>
 
-                <h2 id="steps">9 kroków samodzielnej drogi psałterzysty 🎶🕊️</h2>
-                <ol class="psalterzysta-steps">
-                    <li>
-                        <strong>🎤 Poznaj swój głos</strong>
-                        <p>Nagraj siebie mówiąc i śpiewając. Zauważ, czy Twój głos jest wyższy (sopran/alt) czy niższy (tenor/bas). To pomoże Ci dobrać tonacje psalmów.</p>
-                    </li>
-                    <li>
-                        <strong>🎵 Nauka podstaw śpiewu</strong>
-                        <p>Ćwicz gamy i interwały. Użyj tutoriali na YouTube: <a href="https://www.youtube.com/results?search_query=ćwiczenia+wokalne+początkujący" target="_blank">Ćwiczenia wokalne dla początkujących</a>.</p>
-                    </li>
-                    <li>
-                        <strong>🕊️ Czytanie i śpiew psalmów</strong>
-                        <p>Wybierz prosty psalm, np. <em>Psalm 23</em>, czytaj go głośno, potem spróbuj zaśpiewać prostą melodię. Nagrywaj siebie, aby sprawdzać postępy.</p>
-                    </li>
-                    <li>
-                        <strong>📱 Używaj nagrań i YouTube</strong>
-                        <p>Znajdź nagrania psałterzystów lub chóru, np. <a href="https://www.youtube.com/results?search_query=psalm+responsoryjny" target="_blank">Psalm responsoryjny</a>, i śpiewaj razem z nagraniem, aby poczuć rytm i tonację.</p>
-                    </li>
-                    <li>
-                        <strong>🧘 Ćwiczenia oddechowe</strong>
-                        <p>Oddychaj przeponą: wdech przez nos, spokojny wydech przez usta, śpiewając długie dźwięki. To poprawi Twój oddech i wytrzymałość wokalną.</p>
-                    </li>
-                    <li>
-                        <strong>🎶 Praca nad intonacją</strong>
-                        <p>Używaj aplikacji do sprawdzania tonacji np. <a href="https://play.google.com/store/apps/details?id=com.ninjamobile.pitchlab" target="_blank">PitchLab</a> lub pianina online, aby ćwiczyć trafianie w dokładny ton.</p>
-                    </li>
-                    <li>
-                        <strong>📝 Notuj postępy</strong>
-                        <p>Zapisuj ćwiczone psalmy, tonacje i czas praktyki. Możesz też nagrywać krótkie wideo, aby zobaczyć swój rozwój po kilku tygodniach.</p>
-                    </li>
-                    <li>
-                        <strong>💻 Nauka prostych melodii</strong>
-                        <p>Zacznij od krótkich fragmentów psalmów. YouTube ma playlisty: <a href="https://www.youtube.com/results?search_query=psalmy+do+nauki+samodzielnie" target="_blank">psalmy do nauki samodzielnej</a>.</p>
-                    </li>
-                    <li>
-                        <strong>💖 Codzienna praktyka i modlitwa</strong>
-                        <p>Ćwicz codziennie 10–15 minut. Połącz to z modlitwą, aby zwiększyć skupienie i radość z praktyki.</p>
-                    </li>
-                </ol>
+      <!-- Bibliografia -->
+      <article class="post">
+        <h2>Bibliografia</h2>
+        <ol>
+        </ol>
+      </article>
+    </div>
 
-                <h2 id="youtube">Materiały online</h2>
-                <p>Warto korzystać z YouTube, nagrań chóralnych i tutoriali wokalnych, aby rozwijać swoje umiejętności samodzielnie. W przyszłości możesz też spróbować dołączyć do chóru lub wspólnoty liturgicznej.</p>
-            </div>
-        </main>
-    </section>
+    <aside class="sidebar">
+      <div id="nawigacja-container"></div>
+      <h3>Spis treści</h3>
+      <ul>
+        <li><a href="#intro">Wprowadzenie</a></li>
+        <li><a href="#steps">9 kroków samodzielnej drogi psałterzysty</a></li>
+        <li><a href="#youtube">Materiały online</a></li>
+      </ul>
+    </aside>
+  </main>
 
-    <!-- Footer z HTML -->
-    <div id="footer-container"></div>
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
 
-    <!-- Skrypty -->
-    <script>
-      // Ładowanie header, menu i footer z plików HTML
-      function loadHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById(id).innerHTML = data;
-          })
-          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
-      }
+  <script>
+    function loadComponent(id, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
 
-      loadHTML("header-container", "header.html");
-      loadHTML("menu-container", "menu.html");
-      loadHTML("footer-container", "footer.html");
+    loadComponent("header-container", "header.html");
+    loadComponent("menu-container", "menu.html");
+    loadComponent("nawigacja-container", "nawigacja.html");
+    loadComponent("footer-container", "footer.html");
+  </script>
 
-      // Zegar
-      function updateClock() {
-          const now = new Date();
-          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-          const date = now.toLocaleDateString('pl-PL', options);
-          const time = now.toLocaleTimeString('pl-PL');
-          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
-      }
-      setInterval(updateClock, 1000);
-      updateClock();
-
-      // Hamburger menu
-      function toggleMenu() {
-          const menu = document.querySelector("#menu-container");
-          if(menu) menu.classList.toggle("active");
-      }
-    </script>
+  <script src="clock.js"></script>
 
 </body>
+
 </html>

@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-<meta charset="UTF-8">
-<title>Strona Główna | Okiem lektora</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Strona Główna | Okiem lektora</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" sizes="64x64" href="images/okiemlektora.ico">
 </head>
+
 <body>
 
-<!-- HEADER -->
-<div id="header-container"></div>
+    <!-- HEADER -->
+    <div id="header-container"></div>
 
-<!-- NAWIGACJA -->
-<nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div id="menu-container"></div>
-</nav>
-    <div id="clock-container"></div>
+    <!-- NAWIGACJA -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
 
-<main class="container">
-    <div class="content">
-        <article class="post">
-    <figure>
-        <img src="images/ja.png">
-        <figcaption><a href="images/ja.png" target="_blank" rel="noopener noreferrer"></a></figcaption>
-            <h1>"Gdyby Bóg chciał powołać tylko ludzi perfekcyjnych i doskonałych - nikogo by nie powołał"</h1>
-        </article>
-    </div>
+    <main class="container">
+        <div class="content">
+            <article class="post">
+                <figure>
+                    <img src="images/ja.png">
+                    <figcaption><a href="images/ja.png" target="_blank" rel="noopener noreferrer"></a></figcaption>
+                    <h1>"Gdyby Bóg chciał powołać tylko ludzi perfekcyjnych i doskonałych - nikogo by nie powołał"</h1>
+            </article>
+        </div>
 
-    <aside class="sidebar">
-        <div id="nawigacja-container"></div>
-        </ul>
-    </aside>
-</main>
+        <aside class="sidebar">
+            <div id="nawigacja-container"></div>
+        </aside>
+    </main>
 
-<!-- FOOTER -->
-<div id="footer-container"></div>
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
 
-<script>
-function loadComponent(id, file) {
-  fetch(file)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(id).innerHTML = data;
-    });
-}
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
 
-loadComponent("header-container", "header.html");
-loadComponent("menu-container", "menu.html");
-loadComponent("nawigacja-container", "nawigacja.html");
-loadComponent("footer-container", "footer.html");
-</script>
+        loadComponent("header-container", "header.html");
+        loadComponent("menu-container", "menu.html");
+        loadComponent("nawigacja-container", "nawigacja.html");
+        loadComponent("footer-container", "footer.html");
+    </script>
 
-<script src="clock.js"></script>
+    <script src="clock.js"></script>
 
 </body>
+
 </html>

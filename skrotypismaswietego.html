@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Skróty Pisma Świętego – Bóg i sens</title>
+    <title>Skróty Pisma Świętego | Okiem Lektora</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/okiemlektora.ico">
 </head>
+
 <body>
 
     <!-- Header z HTML -->
@@ -17,207 +19,457 @@
         <div id="menu-container"></div>
     </nav>
 
-    <!-- Zegar (JS) -->
-    <div id="clock-container"></div>
-
     <!-- Główna zawartość -->
-    <section>
-        <main class="container">
-    <aside class="sidebar" id="toc">
-        <h3>Wykaz skrótów</h3>
-        <ul>
-            <li><a href="#st">Stary Testament</a></li>
-            <li><a href="#nt">Nowy Testament</a></li>
-            <li><a href="#ps">Pozostałe skróty</a></li>
-        </ul>
-    </aside>
 
-    <div class="content">
-        <h2>Wykaz skrótów ksiąg biblijnych</h2>
-
-<input type="text" id="szukaj" placeholder="Wyszukaj skrót lub księgę..." onkeyup="filtruj()" />
-
-<h3 id="st">Stary Testament</h3>
-
-<table id="tabelaBiblia">
-<thead>
-<tr>
-<th>Skrót</th>
-<th>Nazwa księgi</th>
-</tr>
-</thead>
-<tbody>
-
-<tr><td>Rdz</td><td>Księga Rodzaju</td></tr>
-<tr><td>Wj</td><td>Księga Wyjścia</td></tr>
-<tr><td>Kpł</td><td>Księga Kapłańska</td></tr>
-<tr><td>Lb</td><td>Księga Liczb</td></tr>
-<tr><td>Pwt</td><td>Księga Powtórzonego Prawa</td></tr>
-<tr><td>Joz</td><td>Księga Jozuego</td></tr>
-<tr><td>Sdz</td><td>Księga Sędziów</td></tr>
-<tr><td>Rt</td><td>Księga Rut</td></tr>
-<tr><td>1 Sm</td><td>1 Księga Samuela</td></tr>
-<tr><td>2 Sm</td><td>2 Księga Samuela</td></tr>
-<tr><td>1 Krl</td><td>1 Księga Królewska</td></tr>
-<tr><td>2 Krl</td><td>2 Księga Królewska</td></tr>
-<tr><td>1 Krn</td><td>1 Księga Kronik</td></tr>
-<tr><td>2 Krn</td><td>2 Księga Kronik</td></tr>
-<tr><td>Ezd</td><td>Księga Ezdrasza</td></tr>
-<tr><td>Ne</td><td>Księga Nehemiasza</td></tr>
-<tr><td>Tb</td><td>Księga Tobiasza</td></tr>
-<tr><td>Jdt</td><td>Księga Judyty</td></tr>
-<tr><td>Est</td><td>Księga Estery</td></tr>
-<tr><td>1 Mch</td><td>1 Księga Machabejska</td></tr>
-<tr><td>2 Mch</td><td>2 Księga Machabejska</td></tr>
-<tr><td>Hi</td><td>Księga Hioba</td></tr>
-<tr><td>Ps</td><td>Księga Psalmów</td></tr>
-<tr><td>Prz</td><td>Księga Przysłów</td></tr>
-<tr><td>Koh</td><td>Księga Koheleta</td></tr>
-<tr><td>Pnp</td><td>Pieśń nad Pieśniami</td></tr>
-<tr><td>Mdr</td><td>Księga Mądrości</td></tr>
-<tr><td>Syr</td><td>Mądrość Syracha</td></tr>
-<tr><td>Iz</td><td>Księga Izajasza</td></tr>
-<tr><td>Jr</td><td>Księga Jeremiasza</td></tr>
-<tr><td>Lm</td><td>Lamentacje</td></tr>
-<tr><td>Ba</td><td>Księga Barucha</td></tr>
-<tr><td>Ez</td><td>Księga Ezechiela</td></tr>
-<tr><td>Dn</td><td>Księga Daniela</td></tr>
-<tr><td>Oz</td><td>Księga Ozeasza</td></tr>
-<tr><td>Jl</td><td>Księga Joela</td></tr>
-<tr><td>Am</td><td>Księga Amosa</td></tr>
-<tr><td>Ab</td><td>Księga Abdiasza</td></tr>
-<tr><td>Jon</td><td>Księga Jonasza</td></tr>
-<tr><td>Mi</td><td>Księga Micheasza</td></tr>
-<tr><td>Na</td><td>Księga Nahuma</td></tr>
-<tr><td>Ha</td><td>Księga Habakuka</td></tr>
-<tr><td>So</td><td>Księga Sofoniasza</td></tr>
-<tr><td>Ag</td><td>Księga Aggeusza</td></tr>
-<tr><td>Za</td><td>Księga Zachariasza</td></tr>
-<tr><td>Ml</td><td>Księga Malachiasza</td></tr>
-
-</tbody>
-</table>
+    <main class="container">
+        <div class="content">
+            <article class="post">
 
 
-<h3 id="nt">Nowy Testament</h3>
+                <h2>Wykaz skrótów ksiąg biblijnych</h2>
 
-<table>
-<thead>
-<tr>
-<th>Skrót</th>
-<th>Nazwa księgi</th>
-</tr>
-</thead>
-<tbody>
+                <input type="text" id="szukaj" placeholder="Wyszukaj skrót lub księgę..." onkeyup="filtruj()" />
 
-<tr><td>Mt</td><td>Ewangelia według św. Mateusza</td></tr>
-<tr><td>Mk</td><td>Ewangelia według św. Marka</td></tr>
-<tr><td>Łk</td><td>Ewangelia według św. Łukasza</td></tr>
-<tr><td>J</td><td>Ewangelia według św. Jana</td></tr>
-<tr><td>Dz</td><td>Dzieje Apostolskie</td></tr>
-<tr><td>Rz</td><td>List do Rzymian</td></tr>
-<tr><td>1 Kor</td><td>1 List do Koryntian</td></tr>
-<tr><td>2 Kor</td><td>2 List do Koryntian</td></tr>
-<tr><td>Ga</td><td>List do Galatów</td></tr>
-<tr><td>Ef</td><td>List do Efezjan</td></tr>
-<tr><td>Flp</td><td>List do Filipian</td></tr>
-<tr><td>Kol</td><td>List do Kolosan</td></tr>
-<tr><td>1 Tes</td><td>1 List do Tesaloniczan</td></tr>
-<tr><td>2 Tes</td><td>2 List do Tesaloniczan</td></tr>
-<tr><td>1 Tm</td><td>1 List do Tymoteusza</td></tr>
-<tr><td>2 Tm</td><td>2 List do Tymoteusza</td></tr>
-<tr><td>Tt</td><td>List do Tytusa</td></tr>
-<tr><td>Flm</td><td>List do Filemona</td></tr>
-<tr><td>Hbr</td><td>List do Hebrajczyków</td></tr>
-<tr><td>Jk</td><td>List św. Jakuba</td></tr>
-<tr><td>1 P</td><td>1 List św. Piotra</td></tr>
-<tr><td>2 P</td><td>2 List św. Piotra</td></tr>
-<tr><td>1 J</td><td>1 List św. Jana</td></tr>
-<tr><td>2 J</td><td>2 List św. Jana</td></tr>
-<tr><td>3 J</td><td>3 List św. Jana</td></tr>
-<tr><td>Jud</td><td>List św. Judy</td></tr>
-<tr><td>Ap</td><td>Apokalipsa św. Jana</td></tr>
+                <h3 id="st">Stary Testament</h3>
 
-</tbody>
-</table>
+                <table id="tabelaBiblia">
+                    <thead>
+                        <tr>
+                            <th>Skrót</th>
+                            <th>Nazwa księgi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Rdz</td>
+                            <td>Księga Rodzaju</td>
+                        </tr>
+                        <tr>
+                            <td>Wj</td>
+                            <td>Księga Wyjścia</td>
+                        </tr>
+                        <tr>
+                            <td>Kpł</td>
+                            <td>Księga Kapłańska</td>
+                        </tr>
+                        <tr>
+                            <td>Lb</td>
+                            <td>Księga Liczb</td>
+                        </tr>
+                        <tr>
+                            <td>Pwt</td>
+                            <td>Księga Powtórzonego Prawa</td>
+                        </tr>
+                        <tr>
+                            <td>Joz</td>
+                            <td>Księga Jozuego</td>
+                        </tr>
+                        <tr>
+                            <td>Sdz</td>
+                            <td>Księga Sędziów</td>
+                        </tr>
+                        <tr>
+                            <td>Rt</td>
+                            <td>Księga Rut</td>
+                        </tr>
+                        <tr>
+                            <td>1 Sm</td>
+                            <td>1 Księga Samuela</td>
+                        </tr>
+                        <tr>
+                            <td>2 Sm</td>
+                            <td>2 Księga Samuela</td>
+                        </tr>
+                        <tr>
+                            <td>1 Krl</td>
+                            <td>1 Księga Królewska</td>
+                        </tr>
+                        <tr>
+                            <td>2 Krl</td>
+                            <td>2 Księga Królewska</td>
+                        </tr>
+                        <tr>
+                            <td>1 Krn</td>
+                            <td>1 Księga Kronik</td>
+                        </tr>
+                        <tr>
+                            <td>2 Krn</td>
+                            <td>2 Księga Kronik</td>
+                        </tr>
+                        <tr>
+                            <td>Ezd</td>
+                            <td>Księga Ezdrasza</td>
+                        </tr>
+                        <tr>
+                            <td>Ne</td>
+                            <td>Księga Nehemiasza</td>
+                        </tr>
+                        <tr>
+                            <td>Tb</td>
+                            <td>Księga Tobiasza</td>
+                        </tr>
+                        <tr>
+                            <td>Jdt</td>
+                            <td>Księga Judyty</td>
+                        </tr>
+                        <tr>
+                            <td>Est</td>
+                            <td>Księga Estery</td>
+                        </tr>
+                        <tr>
+                            <td>1 Mch</td>
+                            <td>1 Księga Machabejska</td>
+                        </tr>
+                        <tr>
+                            <td>2 Mch</td>
+                            <td>2 Księga Machabejska</td>
+                        </tr>
+                        <tr>
+                            <td>Hi</td>
+                            <td>Księga Hioba</td>
+                        </tr>
+                        <tr>
+                            <td>Ps</td>
+                            <td>Księga Psalmów</td>
+                        </tr>
+                        <tr>
+                            <td>Prz</td>
+                            <td>Księga Przysłów</td>
+                        </tr>
+                        <tr>
+                            <td>Koh</td>
+                            <td>Księga Koheleta</td>
+                        </tr>
+                        <tr>
+                            <td>Pnp</td>
+                            <td>Pieśń nad Pieśniami</td>
+                        </tr>
+                        <tr>
+                            <td>Mdr</td>
+                            <td>Księga Mądrości</td>
+                        </tr>
+                        <tr>
+                            <td>Syr</td>
+                            <td>Mądrość Syracha</td>
+                        </tr>
+                        <tr>
+                            <td>Iz</td>
+                            <td>Księga Izajasza</td>
+                        </tr>
+                        <tr>
+                            <td>Jr</td>
+                            <td>Księga Jeremiasza</td>
+                        </tr>
+                        <tr>
+                            <td>Lm</td>
+                            <td>Lamentacje</td>
+                        </tr>
+                        <tr>
+                            <td>Ba</td>
+                            <td>Księga Barucha</td>
+                        </tr>
+                        <tr>
+                            <td>Ez</td>
+                            <td>Księga Ezechiela</td>
+                        </tr>
+                        <tr>
+                            <td>Dn</td>
+                            <td>Księga Daniela</td>
+                        </tr>
+                        <tr>
+                            <td>Oz</td>
+                            <td>Księga Ozeasza</td>
+                        </tr>
+                        <tr>
+                            <td>Jl</td>
+                            <td>Księga Joela</td>
+                        </tr>
+                        <tr>
+                            <td>Am</td>
+                            <td>Księga Amosa</td>
+                        </tr>
+                        <tr>
+                            <td>Ab</td>
+                            <td>Księga Abdiasza</td>
+                        </tr>
+                        <tr>
+                            <td>Jon</td>
+                            <td>Księga Jonasza</td>
+                        </tr>
+                        <tr>
+                            <td>Mi</td>
+                            <td>Księga Micheasza</td>
+                        </tr>
+                        <tr>
+                            <td>Na</td>
+                            <td>Księga Nahuma</td>
+                        </tr>
+                        <tr>
+                            <td>Ha</td>
+                            <td>Księga Habakuka</td>
+                        </tr>
+                        <tr>
+                            <td>So</td>
+                            <td>Księga Sofoniasza</td>
+                        </tr>
+                        <tr>
+                            <td>Ag</td>
+                            <td>Księga Aggeusza</td>
+                        </tr>
+                        <tr>
+                            <td>Za</td>
+                            <td>Księga Zachariasza</td>
+                        </tr>
+                        <tr>
+                            <td>Ml</td>
+                            <td>Księga Malachiasza</td>
+                        </tr>
+
+                    </tbody>
+                </table>
 
 
-<h2 id="ps">Pozostałe skróty</h2>
+                <h3 id="nt">Nowy Testament</h3>
 
-<table>
-<tr><td>gr.</td><td>język grecki</td></tr>
-<tr><td>hebr.</td><td>język hebrajski</td></tr>
-<tr><td>aram.</td><td>język aramejski</td></tr>
-<tr><td>por.</td><td>porównaj</td></tr>
-<tr><td>zob.</td><td>zobacz</td></tr>
-<tr><td>LXX</td><td>Septuaginta</td></tr>
-<tr><td>Wlg</td><td>Wulgata</td></tr>
-<tr><td>TM</td><td>tekst masorecki</td></tr>
-</table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skrót</th>
+                            <th>Nazwa księgi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Mt</td>
+                            <td>Ewangelia według św. Mateusza</td>
+                        </tr>
+                        <tr>
+                            <td>Mk</td>
+                            <td>Ewangelia według św. Marka</td>
+                        </tr>
+                        <tr>
+                            <td>Łk</td>
+                            <td>Ewangelia według św. Łukasza</td>
+                        </tr>
+                        <tr>
+                            <td>J</td>
+                            <td>Ewangelia według św. Jana</td>
+                        </tr>
+                        <tr>
+                            <td>Dz</td>
+                            <td>Dzieje Apostolskie</td>
+                        </tr>
+                        <tr>
+                            <td>Rz</td>
+                            <td>List do Rzymian</td>
+                        </tr>
+                        <tr>
+                            <td>1 Kor</td>
+                            <td>1 List do Koryntian</td>
+                        </tr>
+                        <tr>
+                            <td>2 Kor</td>
+                            <td>2 List do Koryntian</td>
+                        </tr>
+                        <tr>
+                            <td>Ga</td>
+                            <td>List do Galatów</td>
+                        </tr>
+                        <tr>
+                            <td>Ef</td>
+                            <td>List do Efezjan</td>
+                        </tr>
+                        <tr>
+                            <td>Flp</td>
+                            <td>List do Filipian</td>
+                        </tr>
+                        <tr>
+                            <td>Kol</td>
+                            <td>List do Kolosan</td>
+                        </tr>
+                        <tr>
+                            <td>1 Tes</td>
+                            <td>1 List do Tesaloniczan</td>
+                        </tr>
+                        <tr>
+                            <td>2 Tes</td>
+                            <td>2 List do Tesaloniczan</td>
+                        </tr>
+                        <tr>
+                            <td>1 Tm</td>
+                            <td>1 List do Tymoteusza</td>
+                        </tr>
+                        <tr>
+                            <td>2 Tm</td>
+                            <td>2 List do Tymoteusza</td>
+                        </tr>
+                        <tr>
+                            <td>Tt</td>
+                            <td>List do Tytusa</td>
+                        </tr>
+                        <tr>
+                            <td>Flm</td>
+                            <td>List do Filemona</td>
+                        </tr>
+                        <tr>
+                            <td>Hbr</td>
+                            <td>List do Hebrajczyków</td>
+                        </tr>
+                        <tr>
+                            <td>Jk</td>
+                            <td>List św. Jakuba</td>
+                        </tr>
+                        <tr>
+                            <td>1 P</td>
+                            <td>1 List św. Piotra</td>
+                        </tr>
+                        <tr>
+                            <td>2 P</td>
+                            <td>2 List św. Piotra</td>
+                        </tr>
+                        <tr>
+                            <td>1 J</td>
+                            <td>1 List św. Jana</td>
+                        </tr>
+                        <tr>
+                            <td>2 J</td>
+                            <td>2 List św. Jana</td>
+                        </tr>
+                        <tr>
+                            <td>3 J</td>
+                            <td>3 List św. Jana</td>
+                        </tr>
+                        <tr>
+                            <td>Jud</td>
+                            <td>List św. Judy</td>
+                        </tr>
+                        <tr>
+                            <td>Ap</td>
+                            <td>Apokalipsa św. Jana</td>
+                        </tr>
+
+                    </tbody>
+                </table>
 
 
-<script>
-function filtruj() {
-let input = document.getElementById("szukaj");
-let filter = input.value.toLowerCase();
-let rows = document.querySelectorAll("table tbody tr");
+                <h2 id="ps">Pozostałe skróty</h2>
 
-rows.forEach(row => {
-let text = row.textContent.toLowerCase();
-row.style.display = text.includes(filter) ? "" : "none";
-});
-}
-</script>
-    </div>
+                <table>
+                    <tr>
+                        <td>gr.</td>
+                        <td>język grecki</td>
+                    </tr>
+                    <tr>
+                        <td>hebr.</td>
+                        <td>język hebrajski</td>
+                    </tr>
+                    <tr>
+                        <td>aram.</td>
+                        <td>język aramejski</td>
+                    </tr>
+                    <tr>
+                        <td>por.</td>
+                        <td>porównaj</td>
+                    </tr>
+                    <tr>
+                        <td>zob.</td>
+                        <td>zobacz</td>
+                    </tr>
+                    <tr>
+                        <td>LXX</td>
+                        <td>Septuaginta</td>
+                    </tr>
+                    <tr>
+                        <td>Wlg</td>
+                        <td>Wulgata</td>
+                    </tr>
+                    <tr>
+                        <td>TM</td>
+                        <td>tekst masorecki</td>
+                    </tr>
+                </table>
 
-</main>
-</section>
-    <section class="bibliografia">
-  <h2>Bibliografia</h2>
-  <ol>
-    <li><a href="https://biblia.deon.pl/menu.php?st_id=4" target="_blank" rel="noopener noreferrer">
-        https://biblia.deon.pl/menu.php?st_id=4
-      </a> [dostęp 2026-03-12.]
-    </li>
-  </ol>
-</section>
+
+                <script>
+                    function filtruj() {
+                        let input = document.getElementById("szukaj");
+                        let filter = input.value.toLowerCase();
+                        let rows = document.querySelectorAll("table tbody tr");
+
+                        rows.forEach(row => {
+                            let text = row.textContent.toLowerCase();
+                            row.style.display = text.includes(filter) ? "" : "none";
+                        });
+                    }
+                </script>
+
+            </article>
+
+            <!-- Bibliografia -->
+            <article class="post">
+                <h2>Bibliografia</h2>
+                <ol>
+                    <li>https://biblia.deon.pl/menu.php?st_id=4 [dostęp 2026-03-12.]</li>
+                </ol>
+            </article>
+        </div>
+
+        <aside class="sidebar" id="toc">
+            <div id="clock-container" class="sticky-clock"></div>
+
+            <div id="nawigacja-container"></div>
+
+            <h3>Wykaz skrótów</h3>
+            <ul>
+                <li><a href="#st">Stary Testament</a></li>
+                <li><a href="#nt">Nowy Testament</a></li>
+                <li><a href="#ps">Pozostałe skróty</a></li>
+            </ul>
+        </aside>
+
+    </main>
 
     <!-- Footer z HTML -->
     <div id="footer-container"></div>
 
     <!-- Skrypty -->
     <script>
-      // Ładowanie header, menu i footer z plików HTML
-      function loadHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById(id).innerHTML = data;
-          })
-          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
-      }
+        // Ładowanie header, menu i footer z plików HTML
+        function loadHTML(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+        }
 
-      loadHTML("header-container", "header.html");
-      loadHTML("menu-container", "menu.html");
-      loadHTML("footer-container", "footer.html");
+        loadHTML("header-container", "header.html");
+        loadHTML("menu-container", "menu.html");
+        loadHTML("footer-container", "footer.html");
 
-      // Zegar
-      function updateClock() {
-          const now = new Date();
-          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-          const date = now.toLocaleDateString('pl-PL', options);
-          const time = now.toLocaleTimeString('pl-PL');
-          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
-      }
-      setInterval(updateClock, 1000);
-      updateClock();
+        // Zegar
+        function updateClock() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const date = now.toLocaleDateString('pl-PL', options);
+            const time = now.toLocaleTimeString('pl-PL');
+            document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
 
-      // Hamburger menu
-      function toggleMenu() {
-          const menu = document.querySelector("#menu-container");
-          if(menu) menu.classList.toggle("active");
-      }
+        // Hamburger menu
+        function toggleMenu() {
+            const menu = document.querySelector("#menu-container");
+            if (menu) menu.classList.toggle("active");
+        }
     </script>
 
+    <script src="clock.js"></script>
+
 </body>
+
 </html>

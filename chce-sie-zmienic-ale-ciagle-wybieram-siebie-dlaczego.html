@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Chcę się zmienić… ale ciągle wybieram siebie. Dlaczego? - Bóg i sens</title>
+    <title>Chcę się zmienić… ale ciągle wybieram siebie. Dlaczego? | Okiem lektora</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/okiemlektora.ico">
 </head>
+
 <body>
 
-    <!-- Header z HTML -->
+    <!-- HEADER -->
     <div id="header-container"></div>
 
-    <!-- Nawigacja/menu -->
+    <!-- NAWIGACJA -->
     <nav>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div id="menu-container"></div>
     </nav>
 
-    <!-- Zegar (JS) -->
-    <div id="clock-container"></div>
-
-    <!-- Główna zawartość -->
-    <section>
-        <main class="container">
-    <aside class="sidebar" id="toc">
-        <div id="nawigacja-container"></div>
-    </aside>
-
-    <div class="content">
-
-        <article class="post">
+    <main class="container">
+        <div class="content">
+            <article class="post">
             <h2>Chcę się zmienić… ale ciągle wybieram siebie. Dlaczego?</h2>
             <p class="date">16 marca 2026</p>
 
@@ -90,49 +82,34 @@
             <p>Bo można chcieć dobrze…<br>
             ale jeśli na pierwszym miejscu ciągle jest „ja” —<br>
             to wszystko prędzej czy później zaczyna się rozsypywać.</p>
-        </article>
-    </div>
+            </article>
+        </div>
 
-</main>
-</section>
+        <aside class="sidebar">
+            <div id="nawigacja-container"></div>
+        </aside>
+    </main>
 
-    <!-- Footer z HTML -->
+    <!-- FOOTER -->
     <div id="footer-container"></div>
 
-    <!-- Skrypty -->
     <script>
-      // Ładowanie header, menu i footer z plików HTML
-      function loadHTML(id, file) {
-        fetch(file)
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById(id).innerHTML = data;
-          })
-          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
-      }
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
 
-      loadHTML("header-container", "header.html");
-      loadHTML("menu-container", "menu.html");
-        loadHTML("nawigacja-container", "nawigacja-articles.html");
-      loadHTML("footer-container", "footer.html");
-
-      // Zegar
-      function updateClock() {
-          const now = new Date();
-          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-          const date = now.toLocaleDateString('pl-PL', options);
-          const time = now.toLocaleTimeString('pl-PL');
-          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
-      }
-      setInterval(updateClock, 1000);
-      updateClock();
-
-      // Hamburger menu
-      function toggleMenu() {
-          const menu = document.querySelector("#menu-container");
-          if(menu) menu.classList.toggle("active");
-      }
+        loadComponent("header-container", "header.html");
+        loadComponent("menu-container", "menu.html");
+        loadComponent("nawigacja-container", "nawigacja-articles.html");
+        loadComponent("footer-container", "footer.html");
     </script>
 
+    <script src="clock.js"></script>
+
 </body>
+
 </html>

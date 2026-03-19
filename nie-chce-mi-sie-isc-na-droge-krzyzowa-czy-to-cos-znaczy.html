@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Czy naprawdę trzeba czekać 6 tygodni, żeby sprzątnąć grób? | Okiem lektora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/okiemlektora.ico">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- NAWIGACJA -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <main class="container">
+        <div class="content">
+            <article class="post">
+                <h2>Nie chce mi się iść na Drogę Krzyżową… czy to coś znaczy?</h2>
+                <p class="date">13 marca 2026</p>
+
+                <p><strong>Masz tak, że wiesz, że „warto iść”… ale po prostu Ci się nie chce?</strong><br>
+                    Albo idziesz — ale bardziej z obowiązku niż z potrzeby serca?</p>
+
+                <p>Drugi rok z rzędu uczestniczę w Drodze Krzyżowej i zauważyłem coś, czego kiedyś nie potrafiłem sobie
+                    wyobrazić.</p>
+
+                <p>W tym roku, niosąc krzyż, szedłem z dwoma ministrantami ze świecami.</p>
+
+                <p><strong>I tyle.</strong></p>
+
+                <p>Kiedyś było nas więcej. Dużo więcej. Była możliwość zmiany, zaangażowania, wspólnoty.</p>
+
+                <p>Dziś… często zostają tylko ci, którzy „muszą”.</p>
+
+                <p>Rozmawiając z katechetką, usłyszałem zdanie, które daje do myślenia:
+                    <br><i>„Chodzą tylko ci, którzy muszą”.</i>
+                </p>
+
+                <h4>Wnioski końcowe</h4>
+
+                <p><strong>Tylko czy do Boga naprawdę chodzi się z przymusu?</strong></p>
+
+                <p>Czy do bliskich ludzi idziesz dlatego, że musisz?<br>
+                    Czy dlatego, że chcesz być z nimi?</p>
+
+                <p>Nabożeństwa — Droga Krzyżowa, majowe, roraty — to nie jest lista obecności do odhaczenia.</p>
+
+                <p>A jednak wielu młodych przychodzi, bo:
+                <ul>
+                    <li>trzeba zebrać podpis,</li>
+                    <li>trzeba „zaliczyć”,</li>
+                    <li>trzeba, żeby dopuścili do sakramentu.</li>
+                </ul>
+                </p>
+
+                <p>I coś się wtedy gubi.</p>
+
+                <p><strong>Bo można być ciałem… a nie być sercem.</strong></p>
+
+                <p>A przecież Droga Krzyżowa to nie tylko nabożeństwo.</p>
+
+                <p>To spotkanie.<br>
+                    To zatrzymanie.<br>
+                    To moment, w którym można naprawdę dotknąć czegoś głębszego.</p>
+
+                <p>Mało kto pamięta, że wiąże się z tym możliwość uzyskania odpustu zupełnego.</p>
+
+                <p>Na końcu jest Komunia. Łaska. Realna obecność Boga.</p>
+
+                <p><strong>I pytanie brzmi:</strong></p>
+
+                <p>Czy my tam jesteśmy naprawdę?<br>
+                    Czy tylko „zaliczamy obecność”?</p>
+
+                <p>Bo czasem można odnieść wrażenie, że to człowiek robi Bogu łaskę, że przyjdzie.</p>
+
+                <p>A gdy mu nie pasuje — odchodzi.</p>
+
+                <p><strong>Czy to jeszcze relacja… czy już tylko przyzwyczajenie?</strong></p>
+
+                <p>Droga Krzyżowa nie jest obowiązkiem do odhaczenia.</p>
+
+                <p>To szansa na spotkanie.</p>
+
+                <p>I tylko od nas zależy, czy przyjdziemy z przymusu… czy z sercem.</p>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <div id="nawigacja-container"></div>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                });
+        }
+
+        loadComponent("header-container", "header.html");
+        loadComponent("menu-container", "menu.html");
+        loadComponent("nawigacja-container", "nawigacja-articles.html");
+        loadComponent("footer-container", "footer.html");
+    </script>
+
+    <script src="clock.js"></script>
+
+</body>
+
+</html>
