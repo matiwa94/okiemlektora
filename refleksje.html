@@ -3,17 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Refleksje | Okiem lektora</title>
-
-    <meta name="description"
-        content="Refleksje o wierze, życiu, słabościach i relacji z Bogiem. Zobacz wszystkie artykuły.">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/favicon.ico">
 </head>
 
 <body>
@@ -130,7 +122,6 @@
                 <p class="date">16 marca 2026</p>
                 <p>Czy praktyka bez wnętrza coś zmienia? O modlitwie, pamięci i tym, co naprawdę ma znaczenie.</p>
             </article>
-
         </div>
 
         <aside class="sidebar">
@@ -152,25 +143,8 @@
 
         loadComponent("header-container", "header.html");
         loadComponent("menu-container", "menu.html");
-        loadComponent("nawigacja-container", "nawigacja-articles.html");
+        loadComponent("nawigacja-container", "nawigacja.html");
         loadComponent("footer-container", "footer.html");
-
-        // Zegar
-        function updateClock() {
-            const now = new Date();
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const date = now.toLocaleDateString('pl-PL', options);
-            const time = now.toLocaleTimeString('pl-PL');
-            document.getElementById('clock-container').innerHTML = date + "<br>" + time;
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
-
-        // Hamburger menu
-        function toggleMenu() {
-            const menu = document.querySelector("#menu-container");
-            if (menu) menu.classList.toggle("active");
-        }
     </script>
 
     <script src="clock.js"></script>
