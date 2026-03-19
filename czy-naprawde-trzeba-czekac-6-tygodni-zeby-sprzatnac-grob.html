@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Czy naprawdę trzeba czekać 6 tygodni, żeby sprzątnąć grób? - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <div id="nawigacja-container"></div>
+    </aside>
+
+    <div class="content">
+        <article class="post">
+            <h2>Czy naprawdę trzeba czekać 6 tygodni, żeby sprzątnąć grób?</h2>
+            <p class="date">11 marca 2026</p>
+
+            <p><strong>Spotkałeś się kiedyś z tym, że „nie wolno ruszać kwiatów przez 6 tygodni po pogrzebie”?</strong><br>
+            Bo „tak się mówi”, „tak ludzie robią”…?</p>
+
+            <p>Pewnej środy, przed nabożeństwem, przyszła starsza kobieta. Najpierw chciała zamówić Mszę za zmarłego — na przyszły rok.</p>
+
+            <p>To jeszcze można zrozumieć. Pamięć, troska, potrzeba modlitwy.</p>
+
+            <p>Ale po chwili padło pytanie:
+            <br><i>„Kiedy można sprzątnąć kwiaty z grobu? Czy trzeba czekać 6 tygodni?”</i></p>
+
+            <p>Bo „tak ludzie mówią”.</p>
+
+            <p>I tu pojawia się coś, co warto spokojnie przemyśleć.</p>
+
+            <h4>Wnioski końcowe</h4>
+
+            <p><strong>Skąd biorą się takie przekonania?</strong></p>
+
+            <p>Często z potrzeby, żeby „zrobić coś dobrze”.<br>
+            Żeby niczego nie zaniedbać.<br>
+            Żeby mieć poczucie, że wobec zmarłego zachowaliśmy się jak trzeba.</p>
+
+            <p>To ludzkie. Zwłaszcza kiedy w grę wchodzą emocje, strata i tęsknota.</p>
+
+            <p>Ale pojawia się pytanie:</p>
+
+            <p><strong>Czy to naprawdę ma znaczenie dla osoby, która odeszła?</strong></p>
+
+            <p>Czy to, ile dni stoją kwiaty… coś zmienia?</p>
+
+            <p>Łatwo skupić się na tym, co widać:
+            <ul>
+                <li>kwiaty,</li>
+                <li>znicze,</li>
+                <li>pomnik.</li>
+            </ul>
+            </p>
+
+            <p>A jednocześnie można nie zauważyć tego, co niewidoczne, a ważniejsze:
+            <ul>
+                <li>modlitwy,</li>
+                <li>Mszy Świętej,</li>
+                <li>Komunii w intencji zmarłego.</li>
+            </ul>
+            </p>
+
+            <p><strong>Człowiek potrzebuje konkretu — czegoś, co może zrobić.</strong><br>
+            Dlatego czasem tworzymy zasady, które dają poczucie porządku i kontroli.</p>
+
+            <p>Tylko że nie każda taka „zasada” ma realne znaczenie.</p>
+
+            <p>Bo można zrobić wszystko „zgodnie z tym, co się mówi”…</p>
+
+            <p>…i jednocześnie pominąć to, co naprawdę pomaga.</p>
+
+            <p><strong>Więc kiedy sprzątnąć kwiaty z grobu?</strong></p>
+
+            <p>Najprościej: kiedy przestają spełniać swoją rolę.<br>
+            Kiedy uschną, kiedy przestają być znakiem pamięci, a zaczynają być tylko przyzwyczajeniem.</p>
+
+            <p>Bez lęku. Bez presji. Bez „bo tak trzeba”.</p>
+
+            <p><strong>Bo pamięć o bliskim nie mierzy się liczbą dni.</strong></p>
+
+            <p>Tylko tym, co naprawdę niesiemy dalej.</p>
+        </article>
+    </div>
+
+</main>
+</section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+        loadHTML("nawigacja-container", "nawigacja-articles.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

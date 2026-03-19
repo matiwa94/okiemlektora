@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chcę się zmienić… ale ciągle wybieram siebie. Dlaczego? - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <div id="nawigacja-container"></div>
+    </aside>
+
+    <div class="content">
+
+        <article class="post">
+            <h2>Chcę się zmienić… ale ciągle wybieram siebie. Dlaczego?</h2>
+            <p class="date">16 marca 2026</p>
+
+            <p><strong>Masz tak, że z jednej strony chcesz dobrze… a z drugiej robisz dokładnie odwrotnie?</strong><br>
+            Chcesz zmiany, ale coś w Tobie ciągle ciągnie w swoją stronę?</p>
+
+            <p>Bo życie nie jest prostą drogą. Bardziej przypomina kolejkę — raz pod górkę, raz w dół. 
+            I czasem naprawdę potrafi się noga podwinąć.</p>
+
+            <p><i>Pewna dziewczyna pochodziła z rodziny, która była rozbita wcześniej. Matka miała dziecko z byłym mężem, 
+            a z drugim miała dwoje dzieci. Uczyła się dobrze. Nie było powodów, żeby nie dostała biało-czerwonego paska 
+            na koniec.</i></p>
+
+            <p><i>Ukończyła liceum — bez matury. Wolała wejść w relację. Pojawiło się dziecko. 
+            Wszystko niby zwyczajne… ale o ślubie nie było mowy. Niedziela bez Boga, decyzje bez odpowiedzialności. 
+            Zamiast budowania — ucieczki w alkohol i chwilowe rozwiązania.</i></p>
+
+            <p><i>Ten związek się rozpadł. Pojawił się kolejny. Kolejne dziecko. Fundamenty coraz słabsze. 
+            Decyzje podejmowane pod wpływem emocji — prawdziwy rollercoaster.</i></p>
+
+            <p><i>Ktoś kolejny zobaczył w niej coś dobrego — wiarę, którą wyniosła od babci. 
+            Modliła się, chodziła na Mszę — nie zawsze, ale jednak.</i></p>
+
+            <p><i>Nie zauważył jednak, jak bardzo wciąga go chaos. Nadzieja była dawana i odbierana. 
+            Na koniec — słowa, które zostawiają więcej niż ciszę. Do tego kłamstwa, zdrada, kolejny cios.</i></p>
+
+            <h4>Wnioski końcowe</h4>
+
+            <p>Ta historia nie jest tylko o niej.</p>
+
+            <p><strong>To jest historia o wyborach.</strong><br>
+            O wolności, która miała dać szczęście… a zostawia chaos.</p>
+
+            <p>Bo każdy z nas chce:
+            <ul>
+                <li>wybierać samodzielnie,</li>
+                <li>żyć po swojemu,</li>
+                <li>czuć się bezpiecznie.</li>
+            </ul>
+            </p>
+
+            <p>A jednocześnie… czy wszystko, co wybieramy, naprawdę prowadzi w dobrą stronę?</p>
+
+            <p>Czy same praktyki religijne wystarczą?<br>
+            Czy modlitwa bez zaangażowania serca coś zmienia?<br>
+            Czy można budować życie na chwilowych decyzjach i oczekiwać trwałych efektów?</p>
+
+            <p><strong>Od kiedy zewnętrzne gesty bez wnętrza dają wzrost?</strong></p>
+
+            <p>Ile trzeba błędów, ile łez, żeby człowiek się zatrzymał i zadał sobie pytanie:
+            <br>dokąd ja właściwie idę?</p>
+
+            <p>Czasem mówimy o wolności…<br>
+            ale czy to jeszcze wolność — czy już ucieczka od odpowiedzialności?</p>
+
+            <p><strong>Czy życie oparte na chwilach i emocjach ma przyszłość?</strong></p>
+
+            <p>Bo można chcieć dobrze…<br>
+            ale jeśli na pierwszym miejscu ciągle jest „ja” —<br>
+            to wszystko prędzej czy później zaczyna się rozsypywać.</p>
+        </article>
+    </div>
+
+</main>
+</section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+        loadHTML("nawigacja-container", "nawigacja-articles.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

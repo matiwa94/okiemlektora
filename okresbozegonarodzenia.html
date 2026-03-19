@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolędy i pastorałki - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#awzw">A wczora z wieczora</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <h1>Kolędy i pastorałki</h1>
+
+        <h2 id="awzw">A wczora z wieczora</h2>
+        <p>
+          <ol>
+              <li>A wczora z wieczora, *<br> a wczora z wieczora, z niebieskiego dwora, *<br> z niebieskiego dwora.</li>
+              <li>Przyszła nam nowina, *<br> przyszła nam nowina, Panna rodzi Syna, *<br> Panna rodzi Syna.</li>
+              <li>Boga prawdziwego, *<br> Boga prawdziwego, nieogarnionego, *<br> nieogarnionego.</li>
+              <li>Za wyrokiem Boskim, *<br> za wyrokiem Boskim, w Betlejem żydowskim, *<br> w Betlejem żydowskim.</li>
+              <li>Pastuszkowie mali, *<br> pastuszkowie mali w polu wtenczas spali, *<br> w polu wtenczas spali.</li>
+              <li>Gdy anioł z północy, *<br> gdy anioł z północy światłość z nieba toczy, *<br> światłość z nieba toczy,</li>
+              <li>Chwałę oznajmując, *<br> chwałę oznajmując, szopę pokazując, *<br> szopę pokazując;</li>
+              <li>Chwałę Boga tego, *<br> chwałę Boga tego, dziś nam zrodzonego, *<br> dziś nam zrodzonego:</li>
+              <li>„Tam Panna Dzieciątko, *<br> tam Panna Dzieciątko, miłe Niemowlątko, *<br> miłe Niemowlątko</li>
+              <li>Uwija w pieluszki, *<br> uwija w pieluszki. Pośpieszcie pastuszki, *<br> pośpieszcie pastuszki!”.</li>
+              <li>Natychmiast pastuszy, *<br> natychmiast pastuszy śpieszą z całej duszy, *<br> śpieszą z całej duszy.</li>
+              <li>Weseli bez miary, *<br> weseli bez miary niosą z sobą dary, *<br> niosą z sobą dary.</li>
+          </ol>
+        </p>
+
+    </div>
+
+</main>
+</section>
+    <section class="bibliografia">
+  <h2>Bibliografia</h2>
+  <ol>
+    <li><a href="https://musicamsacram.pl/spiewnik/" target="_blank" rel="noopener noreferrer">
+      https://musicamsacram.pl/spiewnik/</a></li>
+    </ol>
+  </section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

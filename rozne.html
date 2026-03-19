@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Modlitwy różne - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#12opjdsmmadcjbs">12 Obietnic Pana Jezusa dane św. Małgorzacie Marii Alacoque dla czcicieli Jego Boskiego Serca</a></li>
+            <li><a href="#abcskm">"ABC" Społecznej krucjaty miłości</a></li>
+            <li><a href="#aopsnsm">Akt osobistego poświęcenia się Niepokalanemu Sercu Maryi</a></li>
+            <li><a href="#awnspj">Akt wynagrodzenia Najświętszemu Sercu Pana Jezusa</a></li>
+            <li>
+                <a href="#as">Akty strzeliste</a>
+                <ul>
+                    <li><a href="#asa">Akt wiary</a></li>
+                    <li><a href="#asb">Akt nadziei</a></li>
+                    <li><a href="#asc">Akt miłości</a></li>
+                    <li><a href="#asd">Akt żalu</a></li>
+                </ul>
+            </li>
+            <li><a href="#aznsmkp">Akt zawierzenia Niepokalanemu Sercu Maryi, Królowej Polski</a></li>
+            <li><a href="#bwp">Błogosławieństwo w podróży</a></li>
+            <li><a href="#bm">Boże mój</a></li>
+            <li><a href="#bpcan">Bóg potrzebuje Ciebie abyś niósł</a></li>
+            <li><a href="#co">Chwała Ojcu</a></li>
+            <li><a href="#dst">Do Serca Twojego</a></li>
+            <li><a href="#mo">Matko Odkupiciela</a></li>
+            <li><a href="#mazf">Modlitwa Anioła z Fatimy</a>
+            <ul>
+                <li><a href="#mw">Modlitwa wynagradzająca</a></li>
+                <li><a href="#mdts">Modlitwa do Trójcy Świętej</a></li>
+            </ul></li>
+            <li><a href="#mcp">Modlitwa człowieka pracy</a></li>
+            <li><a href="#mdasab">Modlitwa do Anioła Stróża – Aniele Boży</a></li>
+            <li><a href="#mdsma">Modlitwa do świętego Michała Archanioła</a></li>
+            <li><a href="#mdsw">Modlitwa do Świętego Walentego</a></li>
+            <li><a href="#mjp2dnmpge">Modlitwa Jana Pawła II do NMP Gwiazdy Ewangelizacji</a></li>
+            <li><a href="#mkm">Modlitwa kard. Merciera</a></li>
+            <li><a href="#moond">Modlitwa o opiekę na drogę</a></li>
+            <li><a href="#mopd">Modlitwa o pogodę ducha</a></li>
+            <li><a href="#mmop">Modlitwa o pokój</a></li>
+            <li><a href="#mor">Modlitwa o radość</a></li>
+            <li><a href="#mpj1">Modlitwy przed jedzeniem</a></li>
+            <li><a href="#mpj2">Modlitwy po jedzeniu</a></li>
+            <li><a href="#mpce1">Modlitwa przed czytaniem Ewangelii</a></li>
+            <li><a href="#mpce2">Modlitwa po czytaniu Ewangelii</a></li>
+            <li><a href="#mpn1">Modlitwa przed nauką</a></li>
+            <li><a href="#mpn2">Modlitwa po nauce</a></li>
+            <li><a href="#msb">Modlitwa świętego Bernarda</a></li>
+            <li><a href="#msmmk">Modlitwa świętego Maksymiliana Marii Kolbego</a></li>
+            <li><a href="#mzk">Modlitwa za kapłanów</a></li>
+            <li><a href="#mzoxps">Modlitwa za Ojczyznę ks. Piotra Skargi</a></li>
+            <li><a href="#mzoxps">Modlitwa za rodziców</a></li>
+            <li><a href="#mzwbksw">Modlitwa za wstawiennictwem bł. kard. Stefana Wyszyńskiego</a></li>
+            <li><a href="#mzjm">Modlitwa zawierzenia Jezusowi Miłosiernemu</a></li>
+            <li><a href="#nzmm3w">Najstarsza zachowana modlitwa maryjna (III wiek)</a></li>
+            <li><a href="#omj">O mój Jezu</a></li>
+            <li><a href="#ocpbw">Ofiaruję Ci Panie Boże Wszechmogący…</a></li>
+            <li><a href="#otppjimb">Ofiaruję ten pacierz Panu Jezusowi i Matce Bożej…</a></li>
+            <li><a href="#pto">Pod Twoją Obronę</a></li>
+            <li><a href="#prnspj">Poświęcenie rodziny Najświętszemu Sercu Pana Jezusa</a></li>
+            <li><a href="#pnk">Potężna Niebios Królowo</a></li>
+            <li><a href="#sa">Stróżu Aniele</a></li>
+            <li><a href="#sbmb">Siedem boleści Matki Bożej</a></li>
+            <li><a href="#sp">Spowiedź powszechna</a></li>
+            <li><a href="#wibwts">W imię Boga w Trójcy Świętej</a></li>
+            <li><a href="#wkmm">Witaj Królowo, Matko Miłosierdzia</a></li>
+            <li><a href="#wnk">Witaj niebios Królowo</a></li>
+            <li><a href="#wckd">Witamy cię księże drogi</a></li>
+            <li><a href="#wwcwwjb">Wyznanie wiary Credo – (Wierzę w jednego Boga)</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <h1>Modlitwy różne</h1>
+
+    <h2 id="12opjdsmmadcjbs">12 Obietnic Pana Jezusa dane św. Małgorzacie Marii Alacoque dla czcicieli Jego Boskiego Serca</h2>
+    <ol>
+        <li>Dam im wszystkie łaski potrzebne w ich stanie.</li>
+        <li>Zgoda i pokój będą panowały w ich rodzinach.</li>
+        <li>Będę ich pocieszał we wszystkich ich strapieniach.</li>
+        <li>Będę ich bezpieczną ucieczką za życia, a szczególnie przy śmierci.</li>
+        <li>Wyleję obfite błogosławieństwa na wszystkie ich przedsięwzięcia.</li>
+        <li>Grzesznicy znajdą w mym Sercu źródło nieskończonego miłosierdzia.</li>
+        <li>Dusze oziębłe staną się gorliwymi.</li>
+        <li>Dusze gorliwe dojdą szybko do wysokiej doskonałości.</li>
+        <li>Błogosławić będę domy, w których obraz mego Serca będzie umieszczony i czczony.</li>
+        <li>Kapłanom dam moc kruszenia serc najzatwardzialszych.</li>
+        <li>Imiona tych, co rozszerzać będą to nabożeństwo, będą zapisane w mym Sercu i na zawsze w Nim pozostaną.</li>
+        <li>Przyrzekam w nadmiarze miłosierdzia Serca mojego, że wszechmocna miłość moja udzieli tym wszystkim, którzy komunikować będą w pierwsze piątki przez dziewięć miesięcy z rzędu, łaskę pokuty ostatecznej, że nie umrą w stanie niełaski mojej ani bez sakramentów i że Serce moje stanie się dla nich bezpieczną ucieczką w godzinę śmierci. [2]</li>
+    </ol>
+
+    <h2 id="abcskm">"ABC" Społecznej krucjaty miłości</h2>
+    <ol>
+        <li>Szanuj każdego człowieka, bo Chrystus w nim żyje. Bądź wrażliwy na drugiego człowieka, Twojego brata...</li>
+        <li>Myśl dobrze o wszystkich – nie myśl źle o nikim. Staraj się nawet w najgorszym dostrzec coś dobrego.</li>
+        <li>Mów zawsze życzliwie o drugich – nie mów źle o bliźnich. Napraw krzywdę wyrządzoną słowem. Nie czyń rozdźwięku między ludźmi. Jednocz sercem i słowem.</li>
+        <li>Rozmawiaj z każdym językiem miłości. Nie podnoś głosu. Nie przeklinaj. Nie rób przykrości. Nie wyciskaj łez. Uspokajaj i okazuj dobroć.</li>
+        <li>Przebaczaj wszystko i wszystkim. Nie zachowuj w sercu urazy. Zawsze pierwszy wyciągaj rękę do zgody.</li>
+        <li>Działaj zawsze na korzyść bliźniego. Czyń dobrze każdemu, jakbyś pragnął, aby Tobie czyniono. Nie myśl o tym, co Tobie jest kto winien, ale co Ty jesteś winien innym.</li>
+        <li>Czynnie współczuj w cierpieniu. Chętnie spiesz z pomocą, radą, pociechą, sercem.</li>
+        <li>Pracuj rzetelnie, bo z owoców Twojej pracy korzystają inni, jak i Ty korzystasz z pracy drugich.</li>
+        <li>Włącz się w społeczną pomoc bliźniemu. Otwórz rękę ubogim i chorym. Użycz ze swego. Staraj się dostrzec potrzebujących wokół siebie.</li>
+        <li>Módl się za wszystkich, nawet za nieprzyjaciół.</li>
+    </ol>
+
+    <p>Po tym poznają, żeś uczniem Chrystusa... [1]<br>
+    Matko Pięknej Miłości – módl się za nami!<br>
+    <i>"Kiedyś mnie zabraknie, ale wy to sobie przypomnicie." – Stefan Kardynał Wyszyński</i>
+    </p>
+
+    <h2 id="aopsnsm">Akt osobistego poświęcenia się Niepokalanemu Sercu Maryi</h2>
+    <p>
+    Matko Boża, Niepokalana Maryjo! Tobie poświęcam ciało i duszę moją, wszystkie modlitwy i prace,  
+    radości i cierpienia, wszystko, czym jestem i co posiadam.  
+    Ochotnym sercem oddaję się Tobie w macierzyńską niewolę miłości.  
+    Pozostawiam Ci zupełną swobodę posługiwania się mną dla zbawienia ludzi  
+    i ku pomocy Kościołowi Świętemu, którego jesteś Matką.  
+    Chcę odtąd wszystko czynić z Tobą, przez Ciebie i dla Ciebie.  
+    Wiem, że własnymi siłami niczego nie dokonam.  
+    Ty zaś wszystko możesz, co jest wolą Twego Syna, i zawsze zwyciężasz.  
+    Spraw więc, Wspomożycielko Wiernych, by moja rodzina, parafia i cała Ojczyzna  
+    były rzeczywistym królestwem Twego Syna i Twoim. Amen. [6]
+    </p>
+
+    <h2 id="awnspj">Akt wynagrodzenia Najświętszemu Sercu Pana Jezusa</h2>
+    <p>
+    Najmilszy Jezu, któremu za miłość do ludzi odpłaca się często zapomnieniem,  
+    zaniedbaniem, wzgardą i niewdzięcznością.  
+    Oto my, klęcząc przed Tobą, szczególnym hołdem czci pragniemy wynagrodzić  
+    grzeszną oziębłość i zniewagi, jakie obrażają Twoje miłujące Serce.<br><br>
+
+    Pamiętamy jednak, że i my sami niekiedy mieliśmy udział w tym niegodziwym postępowaniu.  
+    Dlatego przejęci najgłębszym żalem najpierw błagamy o miłosierdzie nad nami.  
+    Jesteśmy gotowi dobrowolnie wynagrodzić za grzechy nie tylko przez nas popełnione,  
+    ale i przez tych, którzy błądzą z dala od drogi zbawienia,  
+    i albo uparci w niewierze, nie chcą pójść za Tobą, Pasterzem i Wodzem,  
+    albo też podeptali obietnice chrztu świętego i odrzucili słodkie jarzmo Twojego prawa.<br><br>
+
+    Za te wszystkie przestępstwa chcemy pokutować.  
+    Szczególnie za publiczne grzechy narodów, które zwalczają Prawo Boże  
+    i znieważają godność człowieka, za bluźnierstwa, jakimi obrzuca się Ciebie i Twoich Świętych,  
+    lekceważenie dni świętych, zaniedbywanie Sakramentu Boskiej miłości,  
+    za plagę pijaństwa i rozwiązłości.<br><br>
+
+    Aby naprawić zniewagę czci Bożej, przedstawiamy Ci to zadośćuczynienie,  
+    które Ty sam niegdyś ofiarowałeś Ojcu na Krzyżu i które co dzień uobecniasz na ołtarzach;  
+    łączymy je z zadośćuczynieniem Najświętszej Dziewicy Matki, wszystkich Świętych  
+    i pobożnych wiernych.  
+    I przyrzekamy z głębi serca, ile tylko stać nas będzie przy pomocy Twej łaski,  
+    wynagrodzić za grzechy popełnione przez nas i naszych bliźnich –  
+    silną wiarą, czystymi obyczajami, doskonałym wypełnianiem prawa Ewangelii,  
+    a zwłaszcza prawa miłości.  
+    Przyrzekamy też według sił nie dopuścić do nowych zniewag  
+    i jak najwięcej ludzi pociągnąć do naśladowania Ciebie.<br><br>
+
+    Zachowaj nas do śmierci w wierności obowiązkom i służeniu Tobie  
+    przez wielki dar wytrwania, abyśmy w końcu wszyscy doszli do tej ojczyzny,  
+    gdzie Ty z Ojcem i z Duchem Świętym żyjesz i królujesz na wieki wieków. Amen.<br><br>
+
+    <i>Odpust cząstkowy za pobożne odmówienie aktu wynagrodzenia;  
+    odpust zupełny za odmówienie publiczne w uroczystość Najświętszego Serca Pana Jezusa. [2]</i>
+    </p>
+
+    <h2 id="as">Wiara, nadzieja, miłość (Akty cnót Boskich), żal</h2>
+        <h3 id="asa">Akt wiary</h3>
+            <p>Wierzę w Ciebie, Boże żywy,<br>
+            W Trójcy jedyny, prawdziwy,<br>
+            Wierzę coś objawił, Boże,<br>
+            Twe słowo mylić nie może</p>
+
+        <h3 id="asb">Akt nadziei</h3>
+            <p>Ufam Tobie, boś Ty wierny,<br>
+            Wszechmocny i miłosierny,<br>
+            Dasz mi grzechów odpuszczenie,<br>
+            Łaskę i wieczne zbawienie.</p>
+
+        <h3 id="asc">Akt miłości</h3>
+            <p>Boże, choć Cię nie pojmuję,<br>
+            Jednak nad wszystko miłuję,<br>
+            Nad wszystko, co jest stworzone,<br>
+            Boś Ty Dobro nieskończone.</p>
+
+        <h3 id="asd">Akt żalu</h3>
+            <p>Ach, żałuję za me złości,<br>
+            Jedynie dla Twej miłości,<br>
+            Bądź miłościw mnie grzesznemu,<br>
+            Dla Ciebie odpuszczam bliźniemu. [2]</p>
+
+    <h2 id="aznsmkp">Akt zawierzenia Niepokalanemu Sercu Maryi, Królowej Polski</h2>
+    <p>
+    Niepokalana Matko Jezusa i Matko moja – Maryjo, Królowo Polski!  
+    Biorąc za wzór sługę Bożego Jana Pawła II, mówię dziś: cały(-a) jestem Twój(-oja).  
+    Twojemu Niepokalanemu Sercu zawierzam całego(-łą) siebie, wszystko, czym jestem:  
+    swój umysł, serce, wolę, ciało, swe zmysły, emocje, pamięć, zranienia, słabości,  
+    swoją przeszłość od chwili poczęcia, swoją teraźniejszość i przyszłość wraz ze śmiercią cielesną,  
+    każdy swój krok, czyn, słowo i myśl.  
+    Twojemu Niepokalanemu Sercu zawierzam także swoją rodzinę i wszystko, co posiadam.  
+    Tobie oddaję wszystkie swoje prace, modlitwy i cierpienia.  
+    Ty, Najlepsza Matko, chroń mnie i moich bliskich od Złego.  
+    Upraszaj nam łaski potrzebne do przemiany i uzdrowienia.  
+    Prowadź nas po drogach życia i posługuj się nami do budowania Królestwa Twojego Syna  
+    Jezusa Chrystusa – Jedynego Zbawiciela świata, od którego pochodzi wszelkie dobro, prawda i życie. Amen.
+    </p>
+
+    <p><em>Imprimatur – Bp Jan Wątroba, Częstochowa 2. X. 2008 r., L. Dz. 807</em><br>
+    <u>www.avemaryja.pl [4]</u>
+    </p>
+
+    <h2 id="bwp">Błogosławieństwo w podróży</h2>
+    <p>
+    Drogą pokoju niech nas prowadzi Wszechmocny i miłosierny Pan,  
+    a Jego Anioł niech nas strzeże, byśmy w pokoju i bezpiecznie mogli dojść do celu podróży. [2]
+    </p>
+
+    <h2 id="bm">Boże mój</h2>
+    <ul>
+        <li>
+            Boże, jesteś miłością.<br>
+            Stwarzasz wszystko z miłości:<br>
+            Świat, ludzi, każdego z nas.<br>
+            Stwarzasz.<br>
+            Nie tylko stworzyłeś,<br>
+            Ale wszystko dzięki Tobie<br>
+            Istnieje, porusza się, rośnie,<br>
+            Kwitnie, dojrzewa.<br>
+            Jesteś wciąż w świecie<br>
+            Obecny.<br>
+            Jesteś potęgą tego świata<br>
+            W bezmiarze nieba,<br>
+            W słońcu<br>
+            Księżycu i gwiazdach,<br>
+            W wietrze<br>
+            I burzy,<br>
+            W morzach i górach
+        </li>
+
+        <li>
+            Jesteś mądrością tego świata:<br>
+            Mądrością wody i ziemi, pszczół<br>
+            I mrówek, ziarenek kiełkujących<br>
+            I chomików, jajek i piskląt,<br>
+            Mądrością mądrych ludzi.
+        </li>
+
+        <li>
+            Jesteś pięknością tego świata,<br>
+            Wschodów i zachodów, kwitnących<br>
+            Łąk, dojrzewających pól, ciszą<br>
+            Lasów, śpiewem ptaków, błękitem<br>
+            Nieba, pięknością ludzi pięknych –<br>
+            Szlachetnych, prawych, uczciwych.
+        </li>
+
+        <li>
+            Jesteś dobrocią tego świata,<br>
+            Dobrocią dobrych ludzi, ludzi<br>
+            Przebaczających, cierpliwych,<br>
+            Wyrozumiałych.
+        </li>
+
+        <li>
+            Boże, jesteś we mnie, mówisz<br>
+            Do mnie głosem sumienia. Bylem<br>
+            Cię chciał słuchać, jak wskazujesz<br>
+            Na to, co dobre, jak ostrzegasz<br>
+            Przed tym, co złe, głupie, podłe,<br>
+            Niegodne. [5]
+        </li>
+    </ul>
+
+    <h2 id="bpcan">Bóg potrzebuje Ciebie abyś niósł</h2>
+    <ol>
+        <li>Miłość tam, gdzie panuje nienawiść.</li>
+        <li>Wiarę tam, gdzie wkrada się zwątpienie.</li>
+        <li>Nadzieję tam, gdzie ogarnia rozpacz.</li>
+        <li>Prawdę tam, gdzie szerzy się fałsz.</li>
+        <li>Światło tam, gdzie zalega mrok.</li>
+        <li>Radość tam, gdzie jest smutek.</li>
+        <li>Przebaczenie tam, gdzie wyrządza się krzywdę.</li>
+        <li>Pokój tam, gdzie toczy się walka. [6]</li>
+    </ol>
+
+    <h2 id="co">Chwała Ojcu</h2>
+    <p>
+    Chwała Ojcu, i Synowi, i Duchowi Świętemu,  
+    jak była na początku, teraz i zawsze i na wieki wieków. Amen. [2]
+    </p>
+
+    <h2 id="dst">Do Serca Twojego</h2>
+    <p>
+    Do serca Twojego uciekamy się, Jezu, Boski Zbawicielu! Naszymi grzechami racz się nie zrażać,  
+    O Panie święty, ale od wszelakich złych czynów racz nas zawsze zachować, Boże łaskawy i najlitościwszy.  
+    O Jezu dobry, Zbawicielu słodki, Pośredniku Boski, jedyna ucieczko nasza,  
+    W sercu Twoim racz nas obmyć, do serca Twojego racz nas przytulić,  
+    W Twym sercu na wieki racz nas zachować. [7]
+    </p>
+
+
+    <h2 id="mo">Matko Odkupiciela</h2>
+    <ul>
+        <li>
+            Matko Odkupiciela, z niewiast najsławniejsza,<br>
+            Gwiazdo morska, do nieba ścieżko najprościejsza,<br>
+            Tyś jest przechodnią bramą do raju wiecznego,<br>
+            Tyś jedyną nadzieją człowieka grzesznego.
+        </li>
+        <li>
+            Racz podźwignąć, prosimy, lud upadający,<br>
+            W grzechach swych uwikłany, powstać z nich pragnący.<br>
+            Tyś cudownie zrodziła światu Zbawiciela,<br>
+            Tyś sama wykarmiła Twego Stworzyciela.
+        </li>
+        <li>
+            Panno przedtem i potem z świata podziwieniem,<br>
+            Uczczona Gabriela wdzięcznym pozdrowieniem;<br>
+            Racz się wstawić, o Panno, za nami grzesznymi,<br>
+            Ratuj nas, opiekuj się sługami Twoimi. [8]
+        </li>
+    </ul>
+
+    <h2 id="mazf">Modlitwa Anioła z Fatimy</h2>
+    <h3 id="mw">Modlitwa wynagradzająca</h3>
+            <p>O Boże mój, wierzę w Ciebie, uwielbiam Ciebie,<br>
+            ufam Tobie i miłuję Ciebie.<br>
+            Proszę Cię o przebaczenie dla tych, którzy w Ciebie nie wierzą,<br>
+            Ciebie nie uwielbiają, nie ufają Tobie i Ciebie nie miłują. [3]
+        </p>
+
+    <h3 id="mdts">Modlitwa do Trójcy Świętej</h3>
+            <p>Trójco Przenajświętsza, Ojcze, Synu i Duchu Święty.<br>
+            W najgłębszej pokorze cześć Ci oddaję i ofiaruję Tobie<br>
+            Przenajdroższe Ciało i Krew, Duszę i Bóstwo Jezusa Chrystusa,<br>
+            obecnego na ołtarzach całego świata<br>
+            jako wynagrodzenie za zniewagi,<br>
+            świętokradztwa i obojętność, którymi jest On obrażany.<br>
+            Przez nieskończone zasługi Jego Najświętszego Serca<br>
+            i przez przyczynę Niepokalanego Serca Maryi,<br>
+            proszę Cię o łaskę nawrócenia biednych grzeszników. [3]
+        </p>
+
+    <h2 id="mcp">Modlitwa człowieka pracy</h2>
+    <p>
+    Panie i Boże mój, najlepszy Ojcze. Powołałeś mnie, abym przez swoją pracę udoskonalił świat.  
+    Dziękuję Ci za zadania, możliwości i zdolności.  
+    Pomóż mi każdego dnia służyć Tobie rzetelną pracą, życzliwością wobec współpracowników,  
+    zrozumieniem i dobrym słowem.  
+    Pogodą ducha, dobrym przykładem chciałbym usunąć niesnaski, kłótnie i podejrzenia.  
+    Dopomóż mi w ten sposób przyczynić się do pomnożenia pomyślności mych bliźnich  
+    i ulepszenia świata. [2]
+    </p>
+
+    <h2 id="mdasab">Modlitwa do Anioła Stróża – Aniele Boży</h2>
+    <p>
+    Aniele Boży, stróżu mój,<br>
+    Ty zawsze przy mnie stój.<br>
+    Rano, wieczór, we dnie, w nocy<br>
+    Bądź mi zawsze ku pomocy,<br>
+    Strzeż duszy, ciała mego,<br>
+    zaprowadź mnie do żywota wiecznego.<br>
+    Amen. [6]
+    </p>
+    
+    <h2 id="mdsma">Modlitwa do świętego Michała Archanioła</h2>
+    <ul>
+        <li>
+            Święty Michale Archaniele! Wspomagaj nas w walce,<br>
+            a przeciw niegodziwości i zasadzkom złego ducha bądź naszą obroną.<br>
+            Oby go Bóg pogromić raczył, pokornie o to prosimy,  
+            a Ty, Wodzu niebieskich zastępów, szatana i inne duchy złe,  
+            które na zgubę dusz ludzkich po tym świecie krążą,  
+            mocą Bożą strąć do piekła. Amen. [10]
+        </li>
+
+        <li>
+            <u>Tłumaczenie z łaciny</u><br>
+            Święty Michale Archaniele, broń nas w walce.  
+            Przeciw niegodziwości i zasadzkom złego ducha bądź nam obroną.  
+            Niech go Bóg pogromić raczy, pokornie o to prosimy;  
+            a Ty, Książę wojska niebieskiego, szatana i inne duchy złe,  
+            które na zgubę dusz krążą po świecie, mocą Bożą strąć do piekła. Amen. [11]
+        </li>
+    </ul>
+
+    <h2 id="mdsw">Modlitwa do Świętego Walentego</h2>
+    <p>
+    Święty Walenty, przemożny patronie naszej parafii, stróżu naszego kościoła.  
+    Twojemu orędownictwu powierzamy nasze potrzeby, prace i nasze dusze.<br><br>
+
+    Módl się o łaskę i pomoc dla nas, abyśmy mocni w wierze, żyli ufnością w dobroć Bożą  
+    oraz kierowali się w życiu miłością i sprawiedliwością.<br><br>
+
+    Błądzących prowadź do Kościoła po pokój, wyjednaj słabym łaskę pokut,  
+    miłującym Boga – wytrwanie.<br><br>
+
+    Święty Walenty, weź w opiekę małżeństwa i rodziny, wspomagaj rodziców w wychowywaniu dzieci,  
+    czuwaj nad młodzieżą, ucz ją pięknej i czystej miłości.<br><br>
+
+    Oręduj u Boga za chorymi i cierpiącymi w naszej parafii.  
+    Uproś, patronie nasz, błogosławieństwo dla naszych pól i warsztatów.  
+    Obudź ducha pobożności i miłości Boga oraz bliźniego.<br><br>
+
+    Spraw swą modlitwą u Boga, abyśmy kochali nasz kościół, żyli według przykazań Bożych  
+    i osiągnęli życie wieczne w Królestwie Bożym. Amen. [12]
+    </p>
+
+    <h2 id="mjp2dnmpge">Modlitwa Jana Pawła II do NMP Gwiazdy Ewangelizacji</h2>
+    <p>
+    Maryjo,<br><br>
+
+    w poranek Pięćdziesiątnicy<br>
+    wsparłaś swą modlitwą<br>
+    początek ewangelizacji<br>
+    podjętej przez Apostołów<br>
+    za sprawą Ducha Świętego.<br><br>
+
+    Także dzisiaj,<br>
+    w czasach niepokoju i nadziei<br>
+    otaczaj nieustannie opieką<br>
+    i prowadź Kościół,<br>
+    który spełniając nakaz Chrystusa Pana<br>
+    niesie dobrą nowinę o zbawieniu<br>
+    ludziom i narodom<br>
+    we wszystkich zakątkach ziemi.<br><br>
+
+    Wskazuj nam drogi życia,<br>
+    umacniaj w godzinie próby,<br>
+    abyśmy dochowując wierności Bogu i człowiekowi<br>
+    umieli z pokorą i odwagą<br>
+    przekazywać na falach eteru<br>
+    umysłom i sercom wszystkich ludzi<br>
+    radosną wieść o Chrystusie,<br>
+    Odkupicielu człowieka.<br><br>
+
+    Maryjo, Gwiazdo Ewangelizacji, prowadź nas!<br>
+    Prowadź Radio Maryja i bądź jego Opiekunką!<br><br>
+    Amen. [13]
+    </p>
+
+    <h2 id="mkm">Modlitwa kard. Merciera</h2>
+    <p>
+    O Duchu Święty, duszo mej duszy, uwielbiam Cię.  
+    Oświecaj, kieruj, wzmacniaj i pocieszaj mnie.  
+    Powiedz mi, co mam robić i rozkaż mi to wykonać.  
+    Obiecuję Ci ulegać we wszystkim, co z woli Twojej mnie spotka,  
+    tylko okaż mi Twoją wolę. Amen. [14]
+    </p>
+
+    <h2 id="moond">Modlitwa o opiekę na drogę</h2>
+    <p>
+    Boże daj mi pewną rękę i oko, abym nikomu nie wyrządził szkody na drogach.  
+    Dawco życia, nie pozwól, abym stał się przyczyną śmierci tych, którym Ty dałeś życie.  
+    Zachowaj Panie, osoby towarzyszące mi od nieszczęść i wypadków.  
+    Naucz mnie używać maszyny dla dobra współbraci i pohamuj pokusę nadmiernej szybkości.  
+    Oby piękno świata stworzonego przez Ciebie i radość Twojej łaski towarzyszyły mi zawsze. Amen. [2]
+    </p>
+
+    <h2 id="mopd">Modlitwa o pogodę ducha</h2>
+    <p>
+    Boże, użycz mi pogody ducha, abym godził się z tym, czego nie mogę zmienić,  
+    odwagi, abym zmieniał to, co mogę zmienić i mądrości, abym odróżniał jedno od drugiego.<br><br>
+
+    Pozwól mi co dzień żyć tylko jednym dniem i czerpać radość z chwili, która trwa.  
+    Daj mi w trudnych doświadczeniach losu ujrzeć drogę wiodącą do spokoju  
+    i przyjąć – jak Ty to czyniłeś – ten grzeszny świat takim, jakim on naprawdę jest,  
+    a nie takim, jak ja chciałbym go widzieć.<br><br>
+
+    Daj mi ufać, że jeśli posłusznie poddam się Twojej woli, to wszystko będzie jak należy,  
+    tak, bym w życiu osiągnął umiarkowane szczęście u Twego boku  
+    i na wieki posiadł szczęśliwość nieskończoną.<br>
+    Amen [15]
+    </p>
+
+    <h2 id="mop">Modlitwa o pokój</h2>
+    <p>
+    Boże, dawco i miłośniku pokoju, racz wysłuchać modły nasze i wspieraj nas w wysiłkach o zachowanie pokoju wśród narodów świata.  
+    Usuń złości i nienawiści z życia narodów.  
+    Połącz myśli i uczucia ludów w woli pokoju, by państwa wyrzekły się wszelkich wrogich napaści. [16]
+    </p>
+
+    <h2 id="mor">Modlitwa o radość</h2>
+    <p>
+    Panie, Ty nas powołałeś do radości. Sama praca nie wystarcza człowiekowi.  
+    Dlatego dałeś nam pragnienie miłości i wypoczynku, pragnienie nauki i sztuki,  
+    potrzebę kontaktu z ludźmi, którzy nas kochają, na nas czekają,  
+    którzy potrzebują naszej bliskości.  
+    Panie, Ty nas powołałeś do radości! Dopełnij naszą radość w Tobie. [2]
+    </p>
+
+    <h2 id="mpj1">Modlitwy przed jedzeniem</h2>
+    <ol>
+        <li>
+            Pobłogosław Panie Boże nas, pobłogosław ten posiłek, tych, którzy go przygotowali  
+            i naucz nas dzielić się chlebem i radością ze wszystkimi.  
+            Przez Chrystusa, Pana naszego. Amen. [6]
+        </li>
+        <li>
+            Bądź pochwalony Panie Boże nasz, za te dary, które z Twej dobroci spożywać mamy.  
+            Przez Chrystusa, Pana naszego. Amen. [2]
+        </li>
+        <li>
+            Boże, dzięki Ci składamy za to, co pożywać mamy.  
+            Ty nas żywić nie przestajesz, bądź pochwalon za to, co nam dajesz. Amen. [2]
+        </li>
+    </ol>
+
+    <h2 id="mpj2">Modlitwy po jedzeniu</h2>
+    <ol>
+        <li>
+            Chwalimy Cię Panie i dziękujemy za ten posiłek, dar Twojej dobroci.  
+            Przez Chrystusa, Pana naszego. Amen. [17]
+        </li>
+        <li>
+            Dziękujemy Ci, Boże, za te dary, któreśmy z dobroci Twojej pożywali. <!--z Twojej dobroci spożyliśmy-->
+            Przez Chrystusa Pana naszego. Amen. [2]
+        </li>
+        <li>
+            Za ten posiłek i wszystkie dary Twej dobroci chwalimy Cię Panie.  
+            Przez Chrystusa Pana naszego. Amen. [17]
+        </li>
+        <li>
+            Chwała Tobie, cześć i dzięki za posiłek z Twojej ręki.  
+            Dobry Boże dzięki masz za to, co pożywać dasz. Amen. [2]
+        </li>
+    </ol>
+    <h2 id="mpce1">Modlitwa przed czytaniem Ewangelii</h2>
+    <p>
+    Jezu Chryste, nasz Mistrzu, który jesteś Drogą, Prawdą i Życiem,  
+    spraw, abyśmy kierowali się przewyższającą wszystko nauką Twojej Miłości  
+    w duchu świętego Pawła Apostoła i Kościoła katolickiego.  
+    Ześlij Twojego Ducha Świętego, aby nauczył nas tego, co przepowiadałeś  
+    i stale nam to przypominał. [18]
+    </p>
+
+    <h2 id="mpce2">Modlitwa po czytaniu Ewangelii</h2>
+    <p>
+    Jezu, Boski Mistrzu, Ty masz słowa życia wiecznego.  
+    Wierzę, Panie i Prawdo, ale umocnij moją wiarę.  
+    Panie i Drogo, kocham Cię ze wszystkich moich sił,  
+    ponieważ Ty nakazałeś mi doskonale zachowywać Twe przykazania.  
+    Panie i Życie, uwielbiam Cię i wysławiam, błagam i dziękuję Ci za dar Pisma Świętego.  
+    Z Maryją będę pamiętał i zachowywał Twe słowa w moim umyśle  
+    oraz rozważał je w swym sercu.  
+    Jezu Mistrzu, Drogo, Prawdo i Życie, zmiłuj się nad nami.<br><br>
+
+    Chwała Ojcu i Synowi, i Duchowi Świętemu,  
+    jak była na początku, teraz i zawsze, i na wieki wieków. Amen. [18]
+    </p>
+
+    <h2 id="mpn1">Modlitwa przed nauką</h2>
+    <p>
+    Duchu Święty, który oświecasz serca i umysły nasze, dodaj nam ochoty i zdolności,  
+    aby ta nauka była dla nas pożytkiem doczesnym i wiecznym.  
+    Przez Chrystusa Pana naszego. Amen. [2]
+    </p>
+
+    <h2 id="mpn2">Modlitwa po nauce</h2>
+    <p>
+    Dzięki Ci Boże za światło tej nauki, pragniemy, abyśmy nią oświeceni,  
+    mogli Cię zawsze wielbić i wolę Twoją wypełniać.  
+    Przez Chrystusa, Pana naszego. Amen. [2]
+    </p>
+
+    <h2 id="msb">Modlitwa świętego Bernarda</h2>
+    <ul>
+        <li>
+            Pomnij, o Najświętsza Panno Maryjo,<br>
+            że nigdy nie słyszano,<br>
+            abyś opuściła tego,<br>
+            kto się do Ciebie ucieka,<br>
+            Twej pomocy wzywa,<br>
+            Ciebie o przyczynę prosi.
+        </li>
+
+        <li>
+            Tą ufnością ożywiony, do Ciebie,<br>
+            o Panno nad pannami i Matko,<br>
+            biegnę, do Ciebie przychodzę,<br>
+            przed Tobą jako grzesznik<br>
+            płaczący staję. O Matko Słowa,<br>
+            racz nie gardzić słowami moimi,<br>
+            ale usłysz je łaskawie i wysłuchaj.
+        </li>
+
+        <li>Amen. [2]</li>
+    </ul>
+
+    <h2 id="msmmk">Modlitwa świętego Maksymiliana Marii Kolbego</h2>
+    <p>
+    O Maryjo, bez grzechu pierworodnego poczęta,  
+    módl się z nami, którzy się do Ciebie uciekamy,  
+    i za wszystkimi, którzy się do Ciebie nie uciekają,  
+    a zwłaszcza za nieprzyjaciółmi Kościoła Świętego i polecanymi Tobie. [19]
+    </p>
+
+    <h2 id="mzk">Modlitwa za kapłanów</h2>
+    <p>
+    Ojcze w niebie, Twojej opiece powierzamy naszych duszpasterzy,  
+    którzy dają nam chleb słowa Bożego i chleb eucharystyczny.  
+    Daj im siły do pracy i serce ojcowskie, abyśmy przez ich posługę mogli dojść do zbawienia. Amen. [2]
+    </p>
+
+    <h2 id="mzoxps">Modlitwa za Ojczyznę ks. Piotra Skargi</h2>
+    <ul>
+        <li>
+            Boże, Rządco i Panie narodów,<br>
+            z ręki i karności Twojej racz nas nie wypuszczać,<br>
+            a za przyczyną Najświętszej Panny, Królowej naszej,<br>
+            błogosław Ojczyźnie naszej, by Tobie zawsze wierna,<br>
+            chwałę przynosiła Imieniowi Twemu<br>
+            a syny swe wiodła ku szczęśliwości.
+        </li>
+        <li>
+            Wszechmogący wieczny Boże,<br>
+            spuść nam szeroką i głęboką miłość ku braciom<br>
+            i najmilszej Matce, Ojczyźnie naszej,<br>
+            byśmy jej i ludowi Twemu,<br>
+            swoich pożytków zapomniawszy,<br>
+            mogli służyć uczciwie.
+        </li>
+        <li>
+            Ześlij Ducha Świętego na sługi Twoje,<br>
+            rządy kraju naszego sprawujące,<br>
+            by wedle woli Twojej ludem sobie powierzonym<br>
+            mądrze i sprawiedliwie zdołali kierować.
+        </li>
+        <li>
+            Przez Chrystusa, Pana naszego. Amen. [20]
+        </li>
+    </ul>
+
+    <h2 id="mzr">Modlitwa za rodziców</h2>
+    <p>
+    Panie Boże, Ty nakazałeś nam czcić ojca i matkę.  
+    Miłuję całym sercem moich drogich rodziców.  
+    Wiem, ile im zawdzięczam i dlatego Cię proszę, miej ich w swojej opiece,  
+    obdarz zdrowiem i prowadź ich przez życie drogą Twoich przykazań.  
+    Daj im starość pogodną, a po sędziwych latach przyjmij ich do nieba. Amen. [2]
+    </p>
+
+    <h2 id="mzwbksw">Modlitwa za wstawiennictwem bł. kard. Stefana Wyszyńskiego</h2>
+    <p>
+    Wszechmogący Boże, dziękujemy Ci za to, że dałeś nam błogosławionego kardynała Stefana Wyszyńskiego,  
+    dobrego i mężnego pasterza, który całkowicie zaufał Twojej miłości.<br><br>
+
+    Z synowskim oddaniem zawierzył Maryi siebie, Kościół i Ojczyznę,  
+    dając wzór wierności i pokornej służby człowiekowi.<br><br>
+
+    Miłosierny Ojcze, za przyczyną błogosławionego kardynała Stefana prosimy Cię,  
+    umocnij naszą wiarę, abyśmy całym życiem miłowali Ciebie, Jedynego, Prawdziwego Boga  
+    i wierni Ewangelii, służyli Chrystusowi w każdym człowieku.<br><br>
+
+    Spraw, abyśmy z pomocą Maryi, Matki Chrystusowej, pokonywali wszystkie kryzysy i przeciwności.<br><br>
+
+    Błogosław Ojczyźnie, broń nas od niewiary, nienawiści i wojny.<br><br>
+
+    Ogarnij Kościół i cały świat swoim wielkim miłosierdziem.<br><br>
+
+    Dobry Boże, udziel mi za wstawiennictwem błogosławionego kardynała Stefana Wyszyńskiego  
+    łaski, o którą Cię teraz z ufnością proszę. [21]
+    </p>
+
+    <h2 id="mzjm">Modlitwa zawierzenia Jezusowi Miłosiernemu</h2>
+    <p>Jezu Najmiłosierniejszy, mój Panie i Zbawicielu.
+        Wobec nieba i ziemi, świadom(a) swojej nędzy, grzeszności i niewystarczalności, oddaję się dziś zupełnie i całkowicie, świadomie i dobrowolnie
+        Twemu Nieskończonemu Miłosierdziu.
+        Ufając Twojej Miłosiernej Miłości wyrzekam się na zawsze i całkowicie: 
+        <ul>
+            <li>zła i tego co do zła prowadzi</li>
+            <li>demonów i wszelkich ich spraw i pokus</li>
+            <li>świata i wszystkiego czym usiłuje mnie pociągać i zniewalać</li>
+            <li>siebie i wszystkiego co buduje i zaspokaja mój egoizm i pychę</li>
+        </ul>
+        Oddaję się Tobie Jezu, Najmiłosierniejszy Zbawicielu, jako jedynemu mojemu Bogu i Panu, jedynej miłości, pragnieniu i celowi mojego życia. Z całą pokorą, ufnością i uległością wobec Twojej
+        Najmiłosierniejszej Woli oddaję Ci siebie: 
+        <ul>
+        <li>moje ciało, duszę i ducha</li>
+        <li>całą moją istotę</li>
+        <li>życie w czasie i w wieczności</li>
+        <li>przeszłość, teraźniejszość i przyszłość</li>
+        <li>rozum, uczucia i pragnienia</li>
+        <li>wszelkie zmysły, władze i prawa</li>
+        <li>wolę i wolność moją</li>
+        <li>wszystko czym jestem, co posiadam i co mnie stanowi</li>
+        </ul>
+        Nie zostawiam sobie nic
+        wszystko oddaję Twojej Świętej Woli przez ręce Niepokalanej Matki Miłosierdzia.
+        Rozporządzaj mną jak chcesz, według Twojego Miłosierdzia. Broń mnie i posługuj się mną jako swoją wyłączną i całkowitą własnością, Jezu, ufam Tobie! Amen.</p>
+        <p><i>Do prywatnego odmawiania.</i></p>
+        <p><i>Imprimatur:</i></p>
+        <p><i>Ks. pral. Wiesław Wronka Wikariusz Biskupi Kuria Diecezjalna Łowicka 9 października 2009 r.</i> [22]</p>
+
+    <h2 id="nzmm3w">Najstarsza zachowana modlitwa maryjna (III wiek)</h2>
+    <p>
+    Pod opiekę Twojego<br>
+    miłosierdzia uciekamy się,<br>
+    o Matko Boża.<br>
+    Nie odrzucaj próśb,<br>
+    (które do Ciebie zanosimy)<br>
+    w naszych potrzebach,<br>
+    lecz zachowaj nas od<br>
+    niebezpieczeństwa,<br>
+    (Ty) jedynie czysta<br>
+    i błogosławiona. [23]
+    </p>
+
+    <h2 id="omj">O mój Jezu</h2>
+    <p>
+    O mój Jezu, przebacz nam nasze grzechy,  
+    zachowaj nas od ognia piekielnego,  
+    zaprowadź wszystkie dusze do nieba  
+    i dopomóż szczególnie tym, którzy najbardziej potrzebują Twojego miłosierdzia. [9]
+    </p>
+
+    <h2 id="ocpbw">Ofiaruję Ci Panie Boże Wszechmogący…</h2>
+    <p>
+    Ofiaruję Ci Panie Boże Wszechmogący w Trójcy jedyny ten pacierz,  
+    który był na chwałę i na zbawienie duszy mojej,  
+    a dusze wiernych zmarłych przez Miłosierdzie Boże  
+    niech odpoczywają w pokoju wiecznym. Amen.
+    </p>
+    <p><i>To jest ludowa modlitewka apokryficzna – przekazywana ustnie z pokolenia na pokolenie. Pobożność ludowa. 
+        Nie jest to tekst liturgiczny.</i></p>
+
+    <h2 id="otppjimb">Ofiaruję ten pacierz Panu Jezusowi i Matce Bożej…</h2>
+    <p>
+    Ofiaruję ten pacierz Panu Jezusowi i Matce Bożej na ofiarę.  
+    Proszę Cię, Panie Boże o zdrowie, szczęście, pamięć, rozum, ludzką przyjaźń,  
+    Bożą miłość, krótkie i lekkie skonanie, a po śmierci o duszę zbawienie.
+    </p>
+    <p><i>To jest ludowa modlitewka apokryficzna – przekazywana ustnie z pokolenia na pokolenie. Pobożność ludowa. 
+        Nie jest to tekst liturgiczny.</i></p>
+
+    <h2 id="pto">Pod Twoją Obronę</h2>
+    <p>
+    Pod Twoją obronę uciekamy się, święta Boża Rodzicielko,<br>
+    naszymi prośbami racz nie gardzić w potrzebach naszych,<br>
+    ale od wszelakich złych przygód racz nas zawsze wybawiać,<br>
+    Panno chwalebna i błogosławiona.<br><br>
+
+    O Pani nasza, Orędowniczko nasza, Pośredniczko nasza, Pocieszycielko nasza.<br><br>
+
+    Z Synem swoim nas pojednaj,<br>
+    Synowi swojemu nas polecaj,<br>
+    swojemu Synowi nas oddawaj. [2]<br><br>
+
+    Amen.
+    </p>
+
+    <h2 id="prnspj">Poświęcenie rodziny Najświętszemu Sercu Pana Jezusa</h2>
+    <p>
+    Najsłodszy Zbawicielu, klęcząc kornie u stóp Twoich,  
+    poświęcamy rodzinę naszą Boskiemu Sercu Twemu.  
+    Bądź zawsze naszym Królem.  
+    Mamy w Tobie pełną i całkowitą nadzieję.  
+    Niech duch Twój przenika nasze myśli, pragnienia, słowa i czyny.  
+    Błogosław nasze zamiary, bierz udział w naszych radościach, trudach, pracach,  
+    daj nam poznać Cię coraz lepiej, miłować coraz więcej, słuchać Cię nieustannie.  
+    Niech od krańca do krańca ziemi rozbrzmiewa okrzyk:  
+    „Niech będzie kochane, czczone, chwalone zawsze i wszędzie  
+    triumfujące Serce Jezusa!” Amen. [2]
+    </p>
+
+    <h2 id="pnk">Potężna Niebios Królowo</h2>
+    <p>
+    Potężna Niebios Królowo i Pani Aniołów,<br>
+    Ty, która otrzymałaś od Boga posłannictwo i władzę,<br>
+    by zetrzeć głowę szatana – prosimy Cię pokornie:<br>
+    rozkaż hufcom anielskim, aby ścigały szatanów,<br>
+    stłumiły ich zuchwałość, a zwalczając ich wszędzie, strąciły do piekła.<br>
+    Święci Aniołowie i Archaniołowie, brońcie nas i strzeżcie nas. Amen. (1929) [24]
+    </p>
+
+    <h2 id="sa">Stróżu Aniele</h2>
+    <p>
+    Stróżu Aniele, ratuj mnie wiele, jak będę umierał, żebym złego nie widział.  
+    Żebym widział świętą Annę, co porodziła Najświętszą Pannę.  
+    Najświętsza Panienka zasnęła w cnoteczku na łóżeczku.  
+    Matko śpij – Synu śpię – ale mi się taki sen śnił:  
+    Żem Cię widziała związanego, wielkim cierniem otulonego, skrępowanego.  
+    Prawdziwie Ci się matuchno ten sen śnił.  
+    Kto tę modlitewkę będzie odmawiał rano i na wieczór, będę go broniła od ognia piekielnego,  
+    od wody tonącego, a po śmierci jego, pójdę Ja do niego, wezmę duszę jego do raju wiecznego,  
+    do Królestwa Niebieskiego. Amen.
+    </p>
+    <p><i>To jest ludowa modlitewka apokryficzna – przekazywana ustnie z pokolenia na pokolenie. Pobożność ludowa. 
+        Nie jest to tekst liturgiczny.</i></p>
+
+    <h2 id="sbmb">Siedem boleści Matki Bożej</h2>
+    <ol>
+        <li>Proroctwo Symeona</li>
+        <li>Ucieczka do Egiptu</li>
+        <li>Zgubienie Jezusa</li>
+        <li>Spotkanie na Drodze Krzyżowej</li>
+        <li>Ukrzyżowanie i śmierć Jezusa</li>
+        <li>Zdjęcie z krzyża</li>
+        <li>Złożenie do grobu [25]</li>
+    </ol>
+
+    <h2 id="sp">Spowiedź powszechna</h2>
+    <p>
+    Spowiadam się Bogu wszechmogącemu i wam bracia i siostry, że bardzo zgrzeszyłem myślą, mową, uczynkiem i zaniedbaniem;  
+    moja wina, moja wina, moja bardzo wielka wina.  
+    Przeto błagam Najświętszą Maryję zawsze dziewicę, wszystkich Aniołów i Świętych,  
+    i was bracia i siostry, o modlitwę za mnie do Pana Boga naszego. [2]
+    </p>
+
+    <h2 id="wibwts">W imię Boga w Trójcy Świętej</h2>
+    <p>
+    W Imię Boga w Trójcy Świętej Jedynego, Ojca i Syna i Ducha Świętego  
+    uchodźcie duchy złe z tego miejsca, abyście nie widziały, nie słyszały,  
+    nie niszczyły, nie wprowadzały zamieszania do naszej pracy i planów.  
+    Nasz Bóg jest waszym Panem i rozkazuje wam: idźcie precz i nie wracajcie tu więcej! Amen.<br><br>
+
+    Mocą Bożą, Mocą Twoją Najwyższy Panie,  
+    uczyń nas niewidzialnymi dla naszych wrogów. Amen. [26]
+    </p>
+
+    <h2 id="wkmm">Witaj Królowo, Matko Miłosierdzia</h2>
+    <p>
+    Witaj, Królowo, Matko miłosierdzia,<br>
+    życia, słodyczy i nadziejo nasza, witaj!<br>
+    Do Ciebie wołamy wygnańcy, synowie Ewy;<br>
+    do Ciebie wzdychamy jęcząc i płacząc na tym łez padole.<br><br>
+
+    Przeto, Orędowniczko nasza,<br>
+    one miłosierne oczy Twoje na nas zwróć,<br>
+    a Jezusa, błogosławiony owoc żywota Twojego,<br>
+    po tym wygnaniu nam okaż.<br>
+    O łaskawa, o litościwa, o słodka Panno Maryjo! [27]
+    </p>
+
+    <h2 id="wnk">Witaj niebios Królowo</h2>
+    <ul>
+        <li>
+            Witaj, niebios Królowo!<br>
+            Witaj, Pani Aniołów!<br>
+            Witaj, Różdżko i Bramo,<br>
+            Ty Jasność zrodziłaś nam.
+        </li>
+        <li>
+            Ciesz się, o Panno chwalebna,<br>
+            Ponad wszystkie piękniejsza.<br>
+            Witaj, o Najśliczniejsza!<br>
+            Proś Chrystusa za nami. [8]
+        </li>
+    </ul>
+
+    <h2 id="wckd">Witamy cię księże drogi</h2>
+    <p>
+    Witamy cię księże drogi, <br>że wstępujesz w nasze progi.  <br>
+    Wielkie nam wesele sprawisz, <br>gdy nam dom pobłogosławisz.
+    </p>
+    <p><i>Tekst o charakterze ludowym, nie stanowi oficjalnej modlitwy Kościoła.</i></p>    
+
+    <h2 id="wwcwwjb">Wyznanie wiary Credo – (Wierzę w jednego Boga)</h2>
+    <p>
+    Wierzę w jednego Boga, Ojca Wszechmogącego, Stworzyciela nieba i ziemi, wszystkich rzeczy widzialnych i niewidzialnych.  <br>
+    I w jednego Pana Jezusa Chrystusa, Syna Bożego Jednorodzonego, który z Ojca jest zrodzony przed wszystkimi wiekami. <br> 
+    Bóg z Boga, Światłość ze Światłości, Bóg prawdziwy z Boga prawdziwego.  <br>
+    Zrodzony a nie stworzony, współistotny Ojcu, a przez Niego wszystko się stało.  <br>
+    On to dla nas ludzi i dla naszego zbawienia zstąpił z nieba.  <br>
+    I za sprawą Ducha Świętego przyjął ciało z Maryi Dziewicy i stał się człowiekiem.  <br>
+    Ukrzyżowany również za nas, pod Poncjuszem Piłatem został umęczony i pogrzebany. <br> 
+    I zmartwychwstał dnia trzeciego, jak oznajmia Pismo.  <br>
+    I wstąpił do nieba; siedzi po prawicy Ojca.  <br>
+    I powtórnie przyjdzie w chwale sądzić żywych i umarłych, a Królestwu Jego nie będzie końca.  <br>
+    Wierzę w Ducha Świętego, Pana i Ożywiciela, który od Ojca i Syna pochodzi.  <br>
+    Który z Ojcem i Synem wspólnie odbiera uwielbienie i chwałę, który mówił przez Proroków.  <br>
+    Wierzę w jeden, Święty, powszechny i apostolski Kościół.  <br>
+    Wyznaję jeden chrzest na odpuszczenie grzechów.  <br>
+    I oczekuję wskrzeszenia umarłych.  <br>
+    I życia wiecznego w przyszłym świecie. Amen. [2]
+    </p>
+
+    </div>
+
+</main>
+</section>
+    <section class="bibliografia">
+  <h2>Bibliografia</h2>
+  <ol>
+    <li><a href="https://www.niedziela.pl/artykul/66428/nd/ABC-Spolecznej-Krucjaty-Milosci" target="_blank" rel="noopener noreferrer">
+        https://www.niedziela.pl/artykul/66428/nd/ABC-Spolecznej-Krucjaty-Milosci</a> [dostęp 2026-03-13.]
+    </li>
+      <li>Droga do nieba. Modlitewnik opracowany przez kapłanów diecezji opolskiej i gliwickiej. Wyd. LX. Opole: Wydawnictwo Św. Krzyża, 1993. ISBN 83-85015-10-0</li>
+        <li><a href="https://dolinamodlitwy.pl/modlitwa-aniola-z-fatimy/" target="_blank" rel="noopener noreferrer">
+            https://dolinamodlitwy.pl/modlitwa-aniola-z-fatimy/
+        </a> [dostęp 2026-03-13.]</li>
+        <li><a href="https://www.mocmodlitwy.pl/akt-zawierzenia-niepokalanemu-sercu-maryi" target="_blank" rel="noopener noreferrer">
+            https://www.mocmodlitwy.pl/akt-zawierzenia-niepokalanemu-sercu-maryi
+        </a> [dostęp 2026-03-01.]</li>
+        
+    <li>Maliński, Mieczysław, Mój brat Jezus. Red. Katarzyna Drąg. Bielsko-Biała: Wydawnictwo KLEKS, 1994. ISBN 83-85159-69-X</li>
+    <li>Stępień, Witold OSPPE (oprac.). Jezus, Maryja, Józef. Modlitewnik i śpiewnik dla dzieci. Wyd. uaktualnione. Częstochowa: Drukarnia Garmond, 2003. ISBN 83-902945-4-0.</li>    
+        <li><a href="https://www.tekstowo.pl/religijne/do-serca-twojego" target="_blank" rel="noopener noreferrer">
+            https://www.tekstowo.pl/religijne/do-serca-twojego
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://brewiarz.pl/" target="_blank" rel="noopener noreferrer">
+            https://brewiarz.pl/
+        </a></li>
+        <li><a href="https://modlitwy24.pl/modlitwa-o-moj-jezu/" target="_blank" rel="noopener noreferrer">
+            https://modlitwy24.pl/modlitwa-o-moj-jezu/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="http://swkatarzyna.org/pl/modlitwaswmichala" target="_blank" rel="noopener noreferrer">
+            http://swkatarzyna.org/pl/modlitwaswmichala
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://wojciech.bialystok.pl/modlitwa-do-swietego-michala-archaniola-po-lacinie-duchowa-tarcza-na-wspolczesne-czasy/" target="_blank" rel="noopener noreferrer">
+            https://wojciech.bialystok.pl/modlitwa-do-swietego-michala-archaniola-po-lacinie-duchowa-tarcza-na-wspolczesne-czasy/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://www.parafia-mstow.pl/sanktuarium/modlitwy.html" target="_blank" rel="noopener noreferrer">
+            https://www.parafia-mstow.pl/sanktuarium/modlitwy.html
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://www.radiomaryja.pl/modlitewnik/modlitwa-bl-jana-pawla-ii-do-najswietszej-maryi-panny-gwiazdy-ewangelizacji/" target="_blank" rel="noopener noreferrer">
+            https://www.radiomaryja.pl/modlitewnik/modlitwa-bl-jana-pawla-ii-do-najswietszej-maryi-panny-gwiazdy-ewangelizacji/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="http://ryjewo-kozal.pl/Modlitwy/Do_Ducha_Sw_Merciera.pdf" target="_blank" rel="noopener noreferrer">
+            http://ryjewo-kozal.pl/Modlitwy/Do_Ducha_Sw_Merciera.pdf
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://gwk123.org/modlitwa-o-pogode-ducha/" target="_blank" rel="noopener noreferrer">
+            https://gwk123.org/modlitwa-o-pogode-ducha/
+        </a> [dostęp 2026-03-01.]</li>
+        <li>Szyca, J. Chwalmy Pana. Modlitewnik i śpiewnik dla wszystkich. Wyd. XLII (wg nowej liturgii). Warszawa: „Ars Christiana”, 1975.</li>
+        <li><a href="https://modlitwy24.pl/modlitwa-przed-posilkiem/" target="_blank" rel="noopener noreferrer">
+            https://modlitwy24.pl/modlitwa-przed-posilkiem/
+        </a> [dostęp 2026-03-01.]</li>
+        <li>Warowny, Maciej (oprac.). Ewangelia 2025 : droga, prawda i życie : słowo na każdy dzień. Częstochowa: Edycja Świętego Pawła, 2024. ISBN 978-83-8131-531-9</li>
+        <li><a href="https://www.mocmodlitwy.pl/o-maryjo" target="_blank" rel="noopener noreferrer">
+            https://www.mocmodlitwy.pl/o-maryjo
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://niezbednik.niedziela.pl/artykul/256/Modlitwa-za-Ojczyzne-Ks-Piotra-Skargi" target="_blank" rel="noopener noreferrer">
+            https://niezbednik.niedziela.pl/artykul/256/Modlitwa-za-Ojczyzne-Ks-Piotra-Skargi
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://wspolnota.jankantylegionowo.pl/artykuly/121/" target="_blank" rel="noopener noreferrer">
+            https://wspolnota.jankantylegionowo.pl/artykuly/121/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://egzorcyzmy.katolik.pl/modlitwa-zawierzenia-jezusowi-milosiernemu/" target="_blank" rel="noopener noreferrer">
+            https://egzorcyzmy.katolik.pl/modlitwa-zawierzenia-jezusowi-milosiernemu/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://adonai.pl/modlitwy/?id=133" target="_blank" rel="noopener noreferrer">
+            https://adonai.pl/modlitwy/?id=133
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://www.biblijni.pl/modlitwy/183_potezna_niebios_krolowo.html" target="_blank" rel="noopener noreferrer">
+            https://www.biblijni.pl/modlitwy/183_potezna_niebios_krolowo.html
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://www.piotripawel.czest.pl/kult-matki-bozej-bolesnej/kaplice-siedmiu-bolesci-matki-bozej/" target="_blank" rel="noopener noreferrer">
+            https://www.piotripawel.czest.pl/kult-matki-bozej-bolesnej/kaplice-siedmiu-bolesci-matki-bozej/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="http://modlitewnik.com.pl/modlitwy/27-egzorcyzm/" target="_blank" rel="noopener noreferrer">
+            http://modlitewnik.com.pl/modlitwy/27-egzorcyzm/
+        </a> [dostęp 2026-03-01.]</li>
+        <li><a href="https://www.faustyna.pl/zmbm/witaj-krolowo/" target="_blank" rel="noopener noreferrer">
+                https://www.faustyna.pl/zmbm/witaj-krolowo/</a>[dostęp 2026-03-01.]</li>
+    </ol>
+  </section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

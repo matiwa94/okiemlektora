@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Nie mam czasu w tygodniu… czy naprawdę muszę odpoczywać w niedzielę? - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <div id="nawigacja-container"></div>
+    </aside>
+
+    <div class="content">
+
+        <article class="post">
+            <h2>Nie mam czasu w tygodniu… czy naprawdę muszę odpoczywać w niedzielę?</h2>
+            <p class="date">15 marca 2026</p>
+
+            <p><strong>Masz tak, że cały tydzień nie masz czasu… a w niedzielę próbujesz nadrobić wszystko?</strong><br>
+            Zakupy, obowiązki, zaległości — bo „kiedy, jak nie teraz”?</p>
+
+            <p>Po powrocie z posługi lektorskiej pierwsza myśl? Zjeść obiad. 
+            Niedziela mija szybko — w gronie najbliższych, spokojniej niż zwykle.</p>
+
+            <p>Teoretycznie to dzień odpoczynku. Dzień dla Boga. Dzień dla rodziny.</p>
+
+            <p><strong>Czy na pewno tak to dziś wygląda?</strong></p>
+
+            <p>Ładna pogoda, ciepło, wszystko sprzyja… tylko zamiast odpoczynku — pojawia się myśl:
+            „trzeba coś zrobić”.</p>
+
+            <p>I nagle — gdzieś w tle — słychać pilarkę spalinową.</p>
+
+            <p>Czy ktoś pomylił dni tygodnia? Nie.</p>
+
+            <p>To efekt życia w biegu:
+            <ul>
+                <li>praca 5–6 dni w tygodniu,</li>
+                <li>ciągłe obowiązki,</li>
+                <li>brak czasu na podstawowe rzeczy.</li>
+            </ul>
+            </p>
+
+            <p>Więc zostaje niedziela. Jedyny moment, żeby „nadgonić”.</p>
+
+            <h4>Wnioski końcowe</h4>
+
+            <p><strong>Czy nie zatarły się nam granice między dniami?</strong></p>
+
+            <p>Świat przyspieszył. Tempo życia wzrosło. 
+            Ale jedno się nie zmieniło — potrzeba sensu i zatrzymania.</p>
+
+            <p>Bo niedziela to nie jest tylko „wolne”.</p>
+
+            <p>To dzień, który miał być:
+            <ul>
+                <li>dla Boga,</li>
+                <li>dla relacji,</li>
+                <li>dla odpoczynku.</li>
+            </ul>
+            </p>
+
+            <p>A my często robimy z niego dzień nadrabiania wszystkiego, na co nie było czasu wcześniej.</p>
+
+            <p>Dlaczego?</p>
+
+            <p>Bo jeśli cały tydzień jest źle poukładany — niedziela zaczyna być „awaryjnym rozwiązaniem”.</p>
+
+            <p><strong>Tylko że wtedy coś tracimy.</strong></p>
+
+            <p>Bo można:
+            <ul>
+                <li>zrobić więcej,</li>
+                <li>odrobić zaległości,</li>
+                <li>„ogarnąć życie”</li>
+            </ul>
+            i jednocześnie zgubić to, co najważniejsze.</p>
+
+            <p>W opisie stworzenia świata Bóg działa przez sześć dni — a siódmego odpoczywa.</p>
+
+            <p>Nie dlatego, że musi.<br>
+            Tylko dlatego, że <strong>człowiek tego potrzebuje</strong>.</p>
+
+            <p>Bez zatrzymania zaczynamy żyć jak maszyna — zadanie za zadaniem, bez sensu.</p>
+
+            <p><strong>A co robimy z dniem, który ma nas ratować?</strong></p>
+
+            <p>Czy przyjmujemy go jak dar?<br>
+            Czy raczej traktujemy jak kolejny „projekt do ogarnięcia”?</p>
+
+            <p>Każda niedziela to przypomnienie, że życie to coś więcej niż praca i obowiązki.</p>
+
+            <p>To pamiątka Zmartwychwstania — zwycięstwa życia nad śmiercią.</p>
+
+            <p><strong>Pytanie tylko: czy my jeszcze potrafimy się na chwilę zatrzymać?</strong></p>
+
+            <p>Bo jeśli nie — to nawet mając więcej czasu… możemy mieć coraz mniej życia.</p>
+        </article>
+    </div>
+
+</main>
+</section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+        loadHTML("nawigacja-container", "nawigacja-articles.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

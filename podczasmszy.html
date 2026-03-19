@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Obrzęd Komunii Świętej - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+            <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#oks">Obrzęd Komunii Świętej</a></li>
+            <li><a href="#mgpdks">Modlitwa, gdy przystępujesz do Komunii Świętej</a></li>
+            <li><a href="#mgnpdks">Modlitwa, gdy nie przystępujesz do Komunii Świętej</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <h1 id="oks">Obrzęd Komunii Świętej</h1>
+    
+     <figure>
+        <img src="images/komuniaswieta.jpg" alt="Obrzęd Komunii Świętej">
+        <figcaption>
+          Obrzęd Komunii Świętej.  
+          Źródło: [2]
+        </figcaption>
+      </figure>
+    <h2 id="mgpdks">Modlitwa, gdy przystępujesz do Komunii Świętej</h2>
+      <p>Jezu, ja wierzę, że jesteś w sposób sakramentalny obecny w tej Hostii Świętej, którą przyjmę,  
+        i chcę Cię zawsze kochać, boś taki mądry, odważny.  
+        Bo tak bardzo kochałeś ludzi i byłeś dla nich dobry, bo wierzę, że i mnie kochasz.[1]</p>
+
+    <h2 id="mgnpdks">Modlitwa, gdy nie przystępujesz do Komunii Świętej</h2>
+        <p></p>Jezu, choć nie przyjmuję Cię teraz sakramentalnie, to kocham Cię i chcę być z Tobą złączony  
+        i teraz, i jak wyjdę z kościoła, przez całe moje życie.[1]</p>
+    </section>
+    <section class="bibliografia">
+  <h2>Bibliografia</h2>
+  <ol>
+    <li>Maliński, Mieczysław, Mój brat Jezus. Red. Katarzyna Drąg. Bielsko-Biała: Wydawnictwo KLEKS, 1994. ISBN 83-85159-69-X</li>
+    
+    <li><a href="https://wp.pl.aleteia.org/wp-content/uploads/sites/9/2018/08/web3-hostia-eucharist-hand-priest-mass-shutterstock.jpg" target="_blank" rel="noopener noreferrer">
+      https://wp.pl.aleteia.org/wp-content/uploads/sites/9/2018/08/web3-hostia-eucharist-hand-priest-mass-shutterstock.jpg</a> [dostęp 2026-02-26.]
+    </li>
+  </ol>
+</section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

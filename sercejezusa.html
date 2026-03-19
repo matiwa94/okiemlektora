@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pieśni do Najświętszego Serca Pana Jezusa - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#nsb">Najświętsze Serce Boże</a></li>
+            <li><a href="#okiw">O Krwi i Wodo</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <h1>Pieśni do Najświętszego Serca Pana Jezusa</h1>
+
+        <h2 id="nsb">Najświętsze Serce Boże</h2>
+        <p>Najświętsze Serce Boże, *<br> poświęcamy Ci *<br> naszą ojczyznę, miasta i wioski, *<br>
+           nasze rodziny i nas samych. *<br> Serce Boże, przyjdź Królestwo Twoje! (3 x)</p>
+        <h2 id="okiw">O Krwi i Wodo</h2>
+        <p>O Krwi i Wodo, *<br> któraś wypłynęła *<br> z Najświętszego Serca Jezusowego, *<br>
+           jako zdrój miłosierdzia dla nas, *<br> ufamy Tobie! (3 x)</p>
+
+    </div>
+
+</main>
+</section>
+    <section class="bibliografia">
+  <h2>Bibliografia</h2>
+  <ol>
+    <li><a href="https://musicamsacram.pl/spiewnik/" target="_blank" rel="noopener noreferrer">
+      https://musicamsacram.pl/spiewnik/</a></li>
+    </ol>
+  </section>
+    </div>
+
+</main>
+</section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>

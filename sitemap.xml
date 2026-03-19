@@ -1,30 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- STRONA GŁÓWNA -->
+  <!-- Strona główna -->
   <url>
     <loc>https://matiwa94.github.io/okiemlektora/</loc>
   </url>
 
-  <!-- KATEGORIE / PODSTRONY -->
+  <!-- Katechizm -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/malykatechizm.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/prawdykatechizmowe.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/skrotypismaswietego.html</loc></url>
+
+  <!-- Modlitwy -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/brewiarz.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/lectiodivina.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/litanie.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/duchowa.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/podczasmszy.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/rozaniec.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/aniolpanski.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/krolowoniebios.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/opowolania.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/koronka.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/duchowaadopcja.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/ratunek.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/apeljasnogorski.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/rozne.html</loc></url>
+
+  <!-- Pieśni -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/duchswiety.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/eucharystyczne.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/maryjne.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/milosierdzie.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/modlitewne.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/okresadwentu.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/okresbozegonarodzenia.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/okreswielkanocny.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/okreswielkiegopostu.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/sercejezusa.html</loc></url>
+
+  <!-- Posługa -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/lektor.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/ministrant.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/psalterzysta.html</loc></url>
+
+  <!-- Refleksje -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/refleksje.html</loc></url>
+
+  <!-- O mnie -->
+  <url><loc>https://matiwa94.github.io/okiemlektora/kimjestem.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/kontakt.html</loc></url>
   <url><loc>https://matiwa94.github.io/okiemlektora/discopolo.html</loc></url>
-  <url><loc>https://matiwa94.github.io/okiemlektora/taneczna.html</loc></url>
   <url><loc>https://matiwa94.github.io/okiemlektora/pianino.html</loc></url>
   <url><loc>https://matiwa94.github.io/okiemlektora/rjg.html</loc></url>
   <url><loc>https://matiwa94.github.io/okiemlektora/rysunki.html</loc></url>
-
-  <!-- REFLEKSJE (lista) -->
-  <url><loc>https://matiwa94.github.io/okiemlektora/refleksje.html</loc></url>
-
-  <!-- ARTYKUŁY (NAJWAŻNIEJSZE SEO 🔥) -->
-  <url><loc>https://matiwa94.github.io/okiemlektora/czy-ja-bogu-wystarcze.html</loc></url>
-  <url><loc>https://matiwa94.github.io/okiemlektora/jestem-niedoskonaly-po-co-mam-sluzyc.html</loc></url>
-  <url><loc>https://matiwa94.github.io/okiemlektora/panie-nie-jestem-godzien-podobaja-mi-sie-kobiety.html</loc></url>
-  <url><loc>https://matiwa94.github.io/okiemlektora/czy-eucharystia-naprawde-uzdrawia.html</loc></url>
-  <url><loc>https://matiwa94.github.io/okiemlektora/po-co-wlasciwie-chodzisz-do-kosciola.html</loc></url>
-
-  <!-- O MNIE -->
-  <url><loc>https://matiwa94.github.io/okiemlektora/kimjestem.html</loc></url>
-  <url><loc>https://matiwa94.github.io/okiemlektora/kontakt.html</loc></url>
+  <url><loc>https://matiwa94.github.io/okiemlektora/taneczna.html</loc></url>
 
 </urlset>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pieśni maryjne - Bóg i sens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="images/bogisens.ico">
+</head>
+<body>
+
+    <!-- Header z HTML -->
+    <div id="header-container"></div>
+
+    <!-- Nawigacja/menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div id="menu-container"></div>
+    </nav>
+
+    <!-- Zegar (JS) -->
+    <div id="clock-container"></div>
+
+    <!-- Główna zawartość -->
+    <section>
+        <main class="container">
+    <aside class="sidebar" id="toc">
+        <h3>Spis treści</h3>
+        <ul>
+            <li><a href="#b">Bogurodzica</a></li>
+            <li><a href="#wkmm">Witaj Królowo, Matko Miłosierdzia</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <h1>Pieśni maryjne</h1><figure>
+        <img src="images/bogurodzica.jpg" alt="Bogurodzica">
+        <figcaption>
+          Bogurodzica
+          Źródło: 
+          [1]
+        </figcaption>
+      </figure>
+        <h2 id="b">Bogurodzica (Pierwszy polski hymn narodowy)</h2>
+        <p>
+        Bogurodzica, dziewica, Bogiem sławiena Maryja!<br>
+        U twego syna, Gospodzina, matko zwolena Maryja!<br>
+        Zyszczy nam, spuści nam.<br>
+        Kirielejson.<br>
+        Twego dziela Krzciciela, bożycze,<br>
+        Usłysz głosy, napełni myśli człowiecze.<br>
+        Słysz modlitwę, jąż nosimy,<br>
+        A dać raczy, jegoż prosimy,<br>
+        A na świecie zbożny pobyt,<br>
+        Po żywocie rajski przebyt.<br>
+        Kirielejson.
+        </p>
+        
+        <h2 id="wkmm">Witaj Królowo, Matko Miłosierdzia</h2>
+        <p>
+        Witaj, Królowo, Matko miłosierdzia,<br>
+        życia, słodyczy i nadziejo nasza, witaj!<br>
+        Do Ciebie wołamy wygnańcy, synowie Ewy;<br>
+        do Ciebie wzdychamy jęcząc i płacząc na tym łez padole.<br><br>
+
+        Przeto, Orędowniczko nasza,<br>
+        one miłosierne oczy Twoje na nas zwróć,<br>
+        a Jezusa, błogosławiony owoc żywota Twojego,<br>
+        po tym wygnaniu nam okaż.<br>
+        O łaskawa, o litościwa, o słodka Panno Maryjo!
+        </p>
+    </div>
+
+</main>
+</section>
+    <section class="bibliografia">
+    <h2>Bibliografia</h2>
+  <ol>
+    <li><a href="https://www.facebook.com/photo.php?fbid=5455708047842367&id=622617124484841&set=a.631409140272306" target="_blank" rel="noopener noreferrer">
+      https://www.facebook.com/photo.php?fbid=5455708047842367&id=622617124484841&set=a.631409140272306</a> [dostęp 2026-02-27.]</li>
+    </li>
+    </ol>
+    </section>
+
+    <!-- Footer z HTML -->
+    <div id="footer-container"></div>
+
+    <!-- Skrypty -->
+    <script>
+      // Ładowanie header, menu i footer z plików HTML
+      function loadHTML(id, file) {
+        fetch(file)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          })
+          .catch(err => console.error(`Błąd wczytywania ${file}:`, err));
+      }
+
+      loadHTML("header-container", "header.html");
+      loadHTML("menu-container", "menu.html");
+      loadHTML("footer-container", "footer.html");
+
+      // Zegar
+      function updateClock() {
+          const now = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('pl-PL', options);
+          const time = now.toLocaleTimeString('pl-PL');
+          document.getElementById('clock-container').innerHTML = date + "<br>" + time;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Hamburger menu
+      function toggleMenu() {
+          const menu = document.querySelector("#menu-container");
+          if(menu) menu.classList.toggle("active");
+      }
+    </script>
+
+</body>
+</html>
